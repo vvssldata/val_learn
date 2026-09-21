@@ -183,90 +183,270 @@ const CURRICULUM = {
     vocab: { name:"Vocabulary", topics: [
       { t:"Context Clues & Word Inference", o:"Use context clues in complex sentences and short passages to infer the meaning of unfamiliar or multiple-meaning words.",
         p:[
-          ["The senator's speech was full of platitudes, offering no real solutions to the crisis. “Platitudes” most likely means:",["Detailed statistics","Brilliant new ideas","Personal insults","Overused, meaningless remarks"],3],
-          ["Despite the coach's admonition to stay focused, several players' attention drifted. “Admonition” most likely means:",["A question","A celebration","A joke","A warning or reminder"],3],
-          ["The old house had an air of dilapidation, with peeling paint and a sagging roof. “Dilapidation” most likely means:",["Being newly renovated","Being brightly colored","Being extremely valuable","Being in a state of disrepair"],3],
-          ["Her explanation was so convoluted that nobody could follow her reasoning. “Convoluted” most likely means:",["Loud","Very brief","Perfectly clear","Overly complicated"],3]
+          ["The senator's speech was full of platitudes, offering no real solutions to the crisis. “Platitudes” most likely means:",["Overused, meaningless remarks","Brilliant new ideas","Detailed statistics","Personal insults"],0],
+          ["Despite the coach's admonition to stay focused, several players' attention drifted. “Admonition” most likely means:",["A warning or reminder","A joke","A question","A celebration"],0],
+          ["The old house had an air of dilapidation, with peeling paint and a sagging roof. “Dilapidation” most likely means:",["Being in a state of disrepair","Being extremely valuable","Being newly renovated","Being brightly colored"],0],
+          ["Her explanation was so convoluted that nobody could follow her reasoning. “Convoluted” most likely means:",["Loud","Perfectly clear","Very brief","Overly complicated"],3]
         ],
         a:[
-          ["The critic praised the novel's lucid prose, which made a complex plot easy to follow. “Lucid” most likely means:",["Confusing","Clear and easy to understand","Short","Poetic"],1],
-          ["The witness's testimony was corroborated by security camera footage. “Corroborated” most likely means:",["Contradicted","Recorded","Confirmed by other evidence","Ignored"],2],
-          ["The company's finances were precarious, and one bad quarter could bankrupt it. “Precarious” most likely means:",["Profitable","Extremely secure","Well documented","Unstable and risky"],3],
-          ["He tried to placate his angry sister by offering to do her chores for a week. “Placate” most likely means:",["To ignore","To calm or appease","To confuse","To anger further"],1],
-          ["The professor's aloof manner made it hard for students to approach her after class. “Aloof” most likely means:",["Loud and talkative","Distant and reserved","Warm and friendly","Nervous"],1],
+          ["The critic praised the novel's lucid prose, which made a complex plot easy to follow. “Lucid” most likely means:",["Short","Poetic","Clear and easy to understand","Confusing"],2],
+          ["The witness's testimony was corroborated by security camera footage. “Corroborated” most likely means:",["Confirmed by other evidence","Recorded","Ignored","Contradicted"],0],
+          ["The company's finances were precarious, and one bad quarter could bankrupt it. “Precarious” most likely means:",["Well documented","Profitable","Extremely secure","Unstable and risky"],3],
+          ["He tried to placate his angry sister by offering to do her chores for a week. “Placate” most likely means:",["To ignore","To confuse","To anger further","To calm or appease"],3],
+          ["The professor's aloof manner made it hard for students to approach her after class. “Aloof” most likely means:",["Loud and talkative","Warm and friendly","Distant and reserved","Nervous"],2],
           ["The detective was skeptical of the suspect's alibi from the very beginning. “Skeptical” most likely means:",["Confused","Sympathetic","Convinced","Doubtful"],3]
         ]},
       { t:"Greek & Latin Roots (Advanced)", o:"Use advanced Greek and Latin roots (chron, morph, path, ambi, omni, phobia, ology, gen) to determine the meaning of unfamiliar academic vocabulary.",
         p:[
-          ["The root “chron” (as in “chronological,” “synchronize”) relates to:",["Time","Feeling","Shape","Distance"],0],
-          ["“Metamorphosis” uses the root “morph,” meaning:",["Light","Form or shape","Number","Sound"],1],
-          ["The suffix “-phobia” (as in “claustrophobia”) means:",["A sudden change","An irrational fear","A type of study","A strong love"],1],
-          ["“Ambidextrous” uses the prefix “ambi-,” meaning:",["One","Many","None","Both"],3]
+          ["The root “chron” (as in “chronological,” “synchronize”) relates to:",["Time","Distance","Feeling","Shape"],0],
+          ["“Metamorphosis” uses the root “morph,” meaning:",["Light","Form or shape","Sound","Number"],1],
+          ["The suffix “-phobia” (as in “claustrophobia”) means:",["A sudden change","A strong love","A type of study","An irrational fear"],3],
+          ["“Ambidextrous” uses the prefix “ambi-,” meaning:",["Both","Many","One","None"],0]
         ],
         a:[
-          ["“Omnipotent” uses the root “omni-,” meaning it describes something with:",["No power","Hidden power","Some power","All power"],3],
-          ["The suffix “-ology” (as in “biology,” “psychology”) means:",["The opposite of","The fear of","The shape of","The study of"],3],
-          ["“Pathology” combines “path” (suffering/feeling) and “-ology” to mean the study of:",["Weather patterns","Diseases and their causes","Number systems","Ancient languages"],1],
-          ["The root “gen” (as in “generate,” “genetics”) relates to:",["Distance","Origin or birth","Time","Sound"],1],
-          ["“Anachronism” combines “ana-” (against) and “chron” (time) to mean something that is:",["Out of its proper time period","Perfectly timed","Extremely loud","Very colorful"],0],
-          ["“Empathy” uses the root “path,” meaning it involves sharing another person's:",["Possessions","Time","Name","Feelings"],3]
+          ["“Omnipotent” uses the root “omni-,” meaning it describes something with:",["Hidden power","Some power","All power","No power"],2],
+          ["The suffix “-ology” (as in “biology,” “psychology”) means:",["The study of","The opposite of","The shape of","The fear of"],0],
+          ["“Pathology” combines “path” (suffering/feeling) and “-ology” to mean the study of:",["Diseases and their causes","Ancient languages","Number systems","Weather patterns"],0],
+          ["The root “gen” (as in “generate,” “genetics”) relates to:",["Distance","Time","Origin or birth","Sound"],2],
+          ["“Anachronism” combines “ana-” (against) and “chron” (time) to mean something that is:",["Extremely loud","Out of its proper time period","Very colorful","Perfectly timed"],1],
+          ["“Empathy” uses the root “path,” meaning it involves sharing another person's:",["Feelings","Possessions","Time","Name"],0]
         ]},
       { t:"Connotation, Denotation & Tone", o:"Distinguish a word's literal meaning (denotation) from its emotional association (connotation), and identify how word choice shapes tone.",
         p:[
-          ["“Frugal” and “stingy” have similar denotations, but “stingy” carries a more:",["Formal tone","Positive connotation","Negative connotation","Scientific meaning"],2],
-          ["Which word has the most positive connotation for someone who speaks their mind?",["Honest","Blunt","Rude","Tactless"],0],
-          ["A writer who describes a storm as “a furious, merciless assault” is creating a tone that is:",["Calm and peaceful","Ominous and threatening","Neutral and factual","Humorous"],1],
+          ["“Frugal” and “stingy” have similar denotations, but “stingy” carries a more:",["Formal tone","Negative connotation","Positive connotation","Scientific meaning"],1],
+          ["Which word has the most positive connotation for someone who speaks their mind?",["Blunt","Tactless","Honest","Rude"],2],
+          ["A writer who describes a storm as “a furious, merciless assault” is creating a tone that is:",["Humorous","Calm and peaceful","Ominous and threatening","Neutral and factual"],2],
           ["“Elderly” and “decrepit” both describe someone old, but “decrepit” adds a connotation of:",["Youth","Frailty and decline","Wealth","Wisdom and respect"],1]
         ],
         a:[
-          ["Which word has a more positive connotation than “nosy”?",["Prying","Meddlesome","Curious","Snooping"],2],
-          ["A journalist who calls a policy “a reckless gamble” rather than “a bold risk” is using word choice to create a tone that is:",["Neutral","Celebratory","Critical and disapproving","Approving"],2],
-          ["“House” and “home” share a denotation, but “home” carries an added connotation of:",["Coldness","Warmth and belonging","Size","Cost"],1],
-          ["Which word has the most negative connotation for someone who is confident?",["Arrogant","Assured","Self-assured","Certain"],0],
-          ["An author describing a character's smile as “a thin, cold curve of the lips” is most likely building a tone of:",["Warmth","Unease or menace","Boredom","Comedy"],1],
-          ["“Slender” and “scrawny” both describe a thin person, but “scrawny” carries a connotation that is:",["More negative","Formal","Purely scientific","More positive"],0]
+          ["Which word has a more positive connotation than “nosy”?",["Snooping","Prying","Curious","Meddlesome"],2],
+          ["A journalist who calls a policy “a reckless gamble” rather than “a bold risk” is using word choice to create a tone that is:",["Critical and disapproving","Neutral","Celebratory","Approving"],0],
+          ["“House” and “home” share a denotation, but “home” carries an added connotation of:",["Size","Cost","Warmth and belonging","Coldness"],2],
+          ["Which word has the most negative connotation for someone who is confident?",["Assured","Certain","Arrogant","Self-assured"],2],
+          ["An author describing a character's smile as “a thin, cold curve of the lips” is most likely building a tone of:",["Boredom","Warmth","Unease or menace","Comedy"],2],
+          ["“Slender” and “scrawny” both describe a thin person, but “scrawny” carries a connotation that is:",["Purely scientific","More positive","Formal","More negative"],3]
         ]},
       { t:"Figurative Language", o:"Identify and interpret similes, metaphors, personification, hyperbole, and idioms in context.",
         p:[
-          ["“Time is a thief that steals our youth” is an example of:",["Hyperbole","Metaphor","Onomatopoeia","Simile"],1],
-          ["“The wind whispered through the trees” is an example of:",["Alliteration","Personification","Simile","Idiom"],1],
-          ["“I've told you a million times” is an example of:",["Hyperbole","Understatement","Idiom","Metaphor"],0],
-          ["“It's raining cats and dogs” is an example of an:",["Fact","Metaphor","Idiom","Simile"],2]
+          ["“Time is a thief that steals our youth” is an example of:",["Onomatopoeia","Hyperbole","Metaphor","Simile"],2],
+          ["“The wind whispered through the trees” is an example of:",["Personification","Simile","Idiom","Alliteration"],0],
+          ["“I've told you a million times” is an example of:",["Metaphor","Idiom","Understatement","Hyperbole"],3],
+          ["“It's raining cats and dogs” is an example of an:",["Idiom","Metaphor","Fact","Simile"],0]
         ],
         a:[
-          ["“Her eyes were as bright as diamonds” is an example of a:",["Simile","Idiom","Personification","Metaphor"],0],
-          ["“The old car groaned and coughed before it finally started” is an example of:",["Simile","Personification","Alliteration","Hyperbole"],1],
-          ["Saying someone has “a heart of stone” is an example of a:",["Simile","Hyperbole about geology","Metaphor","Idiom describing literal rock"],2],
-          ["“I could eat a horse” is best described as:",["Hyperbole","A simile","Personification","A literal statement"],0],
-          ["“Break the ice” (meaning to ease tension in a social situation) is an example of an:",["Fact","Metaphor about weather","Idiom","Simile"],2],
-          ["In the line “The stars danced playfully in the moonlit sky,” the figurative device used is:",["Personification","Hyperbole","Simile","Idiom"],0]
+          ["“Her eyes were as bright as diamonds” is an example of a:",["Personification","Metaphor","Idiom","Simile"],3],
+          ["“The old car groaned and coughed before it finally started” is an example of:",["Alliteration","Simile","Hyperbole","Personification"],3],
+          ["Saying someone has “a heart of stone” is an example of a:",["Metaphor","Idiom describing literal rock","Hyperbole about geology","Simile"],0],
+          ["“I could eat a horse” is best described as:",["Hyperbole","A simile","A literal statement","Personification"],0],
+          ["“Break the ice” (meaning to ease tension in a social situation) is an example of an:",["Fact","Simile","Idiom","Metaphor about weather"],2],
+          ["In the line “The stars danced playfully in the moonlit sky,” the figurative device used is:",["Idiom","Personification","Hyperbole","Simile"],1]
         ]},
       { t:"SAT Vocabulary — Batch 1 (A)", o:"Study list: Abate (v.) — become less intense. Abrupt (adj.) — sudden and unexpected. Abstract (adj.) — existing in the mind, not physical reality. Abysmal (adj.) — extremely bad. Acceptable (adj.) — satisfactory or permissible. Accidental (adj.) — happening by chance. Accommodate (v.) — to provide space for. Accuracy (n.) — the quality of being correct and precise. Acknowledge (v.) — to admit or recognize as true. Acquired (adj.) — gained through effort or experience. Adapt (v.) — to adjust to new conditions. Adept (adj.) — highly skilled. Adequate (adj.) — sufficient to meet a requirement. Adhere (v.) — to stick to or follow closely. Adjust (v.) — to modify or change slightly. Admire (v.) — to respect and look up to. Advantageous (adj.) — beneficial or useful. Advent (n.) — the arrival or creation of something new. Advise (v.) — to recommend or give guidance. Aggravate (v.) — to make worse or more intense. Aggressive (adj.) — forceful or overly assertive. Allude (v.) — to refer to something indirectly.",
         p:[
-          ["As the storm continued through the night, the wind’s fury finally began to abate. What does “abate” mean here?",["To become less intense","To disappear without warning","To become stronger","To move very quickly"],0],
-          ["His abrupt departure from the meeting surprised everyone in the room. What does “abrupt” mean here?",["Loud and angry","Sudden and unexpected","Planned well in advance","Polite and formal"],1],
-          ["Julie had trouble understanding the appeal of the abstract painting. What does “abstract” mean here?",["Extremely colorful","Easy to understand at a glance","Very old and valuable","Existing in the mind rather than as a physical reality"],3],
-          ["I got an abysmal grade on my research paper! What does “abysmal” mean here?",["Slightly below average","Extremely bad","Completely average","Surprisingly good"],1],
-          ["The teacher deemed Sara’s late assignment acceptable. What does “acceptable” mean here?",["Completely unacceptable","Satisfactory or permissible","Excellent and impressive","Confusing"],1],
-          ["The oil spill was purely accidental, according to the company’s report. What does “accidental” mean here?",["Planned in careful detail","Happening by chance, not on purpose","Caused by a large storm","Illegal and punishable"],1],
-          ["The Grand Hotel can accommodate up to 500 guests during peak season. What does “accommodate” mean here?",["To advertise to","To refuse entry to","To provide space for","To charge extra for"],2],
-          ["The accuracy of the intern’s report impressed the whole team. What does “accuracy” mean here?",["The length of a document","The quality of being correct and precise","The overall style of writing","The speed at which something is done"],1],
-          ["She refused to acknowledge her mistake, even after seeing the evidence. What does “acknowledge” mean here?",["To apologize sincerely","To forget completely","To admit or recognize as true","To argue loudly"],2]
+          ["As the storm continued through the night, the wind’s fury finally began to abate. What does “abate” mean here?",["To disappear without warning","To become stronger","To move very quickly","To become less intense"],3],
+          ["His abrupt departure from the meeting surprised everyone in the room. What does “abrupt” mean here?",["Sudden and unexpected","Loud and angry","Polite and formal","Planned well in advance"],0],
+          ["Julie had trouble understanding the appeal of the abstract painting. What does “abstract” mean here?",["Easy to understand at a glance","Existing in the mind rather than as a physical reality","Extremely colorful","Very old and valuable"],1],
+          ["I got an abysmal grade on my research paper! What does “abysmal” mean here?",["Surprisingly good","Extremely bad","Completely average","Slightly below average"],1],
+          ["The teacher deemed Sara’s late assignment acceptable. What does “acceptable” mean here?",["Completely unacceptable","Excellent and impressive","Satisfactory or permissible","Confusing"],2],
+          ["The oil spill was purely accidental, according to the company’s report. What does “accidental” mean here?",["Planned in careful detail","Illegal and punishable","Happening by chance, not on purpose","Caused by a large storm"],2],
+          ["The Grand Hotel can accommodate up to 500 guests during peak season. What does “accommodate” mean here?",["To refuse entry to","To provide space for","To charge extra for","To advertise to"],1],
+          ["The accuracy of the intern’s report impressed the whole team. What does “accuracy” mean here?",["The speed at which something is done","The length of a document","The quality of being correct and precise","The overall style of writing"],2],
+          ["She refused to acknowledge her mistake, even after seeing the evidence. What does “acknowledge” mean here?",["To forget completely","To admit or recognize as true","To argue loudly","To apologize sincerely"],1]
         ],
         a:[
-          ["Edmund had acquired a taste for fine wine after years of travel. What does “acquired” mean here?",["Gained through effort or experience","Rejected completely","Inherited from a relative","Lost over time"],0],
-          ["Newly-released animals generally adapt to their environments over time. What does “adapt” mean here?",["To stop eating","To escape and hide","To attack other animals","To adjust to new conditions"],3],
-          ["Beth loves playing the piano, but she’s especially adept at the violin. What does “adept” mean here?",["Only a beginner","Highly skilled","Completely uninterested","Frequently frustrated"],1],
-          ["Though his resume was adequate, the company doubted whether he’d be a good fit. What does “adequate” mean here?",["Too short to read","Full of errors","Extremely impressive","Sufficient to meet a requirement"],3],
-          ["You must adhere to the rules if you don’t want to get in trouble. What does “adhere” mean here?",["To stick to or follow closely","To question loudly","To ignore politely","To rewrite completely"],0],
-          ["He had to adjust his seat several times before he found a comfortable position. What does “adjust” mean here?",["To purchase new","To remove entirely","To modify or change slightly","To sit still"],2],
-          ["I admire my mother’s dedication to her work, even during difficult years. What does “admire” mean here?",["To feel sorry for","To respect and look up to","To be confused by","To disagree with"],1],
-          ["Speaking multiple languages is advantageous when applying for international jobs. What does “advantageous” mean here?",["Difficult to prove","Beneficial or useful","Extremely rare","Required by law"],1],
-          ["The world has never been the same since the advent of the light bulb. What does “advent” mean here?",["The price of something","The arrival or creation of something new","The disappearance of something old","The popularity of something"],1],
-          ["The counselor advised the students to study a little each night rather than cramming. What does “advise” mean here?",["To recommend or give guidance","To test formally","To ignore completely","To forbid strictly"],0],
-          ["Scratching the rash will only aggravate it, the doctor warned. What does “aggravate” mean here?",["To make disappear instantly","To make worse or more intense","To have no effect on","To cure completely"],1],
-          ["The man’s aggressive tone made everyone in the room uneasy. What does “aggressive” mean here?",["Quiet and shy","Calm and gentle","Cheerful and friendly","Forceful or overly assertive"],3],
-          ["She alluded to the problem at hand but didn’t say anything more about it. What does “allude” mean here?",["To shout about publicly","To explain in complete detail","To completely deny","To refer to something indirectly"],3]
+          ["Edmund had acquired a taste for fine wine after years of travel. What does “acquired” mean here?",["Inherited from a relative","Gained through effort or experience","Lost over time","Rejected completely"],1],
+          ["Newly-released animals generally adapt to their environments over time. What does “adapt” mean here?",["To adjust to new conditions","To attack other animals","To escape and hide","To stop eating"],0],
+          ["Beth loves playing the piano, but she’s especially adept at the violin. What does “adept” mean here?",["Highly skilled","Only a beginner","Completely uninterested","Frequently frustrated"],0],
+          ["Though his resume was adequate, the company doubted whether he’d be a good fit. What does “adequate” mean here?",["Full of errors","Too short to read","Sufficient to meet a requirement","Extremely impressive"],2],
+          ["You must adhere to the rules if you don’t want to get in trouble. What does “adhere” mean here?",["To stick to or follow closely","To rewrite completely","To question loudly","To ignore politely"],0],
+          ["He had to adjust his seat several times before he found a comfortable position. What does “adjust” mean here?",["To sit still","To remove entirely","To modify or change slightly","To purchase new"],2],
+          ["I admire my mother’s dedication to her work, even during difficult years. What does “admire” mean here?",["To be confused by","To disagree with","To feel sorry for","To respect and look up to"],3],
+          ["Speaking multiple languages is advantageous when applying for international jobs. What does “advantageous” mean here?",["Difficult to prove","Extremely rare","Beneficial or useful","Required by law"],2],
+          ["The world has never been the same since the advent of the light bulb. What does “advent” mean here?",["The arrival or creation of something new","The popularity of something","The disappearance of something old","The price of something"],0],
+          ["The counselor advised the students to study a little each night rather than cramming. What does “advise” mean here?",["To ignore completely","To test formally","To forbid strictly","To recommend or give guidance"],3],
+          ["Scratching the rash will only aggravate it, the doctor warned. What does “aggravate” mean here?",["To have no effect on","To make worse or more intense","To cure completely","To make disappear instantly"],1],
+          ["The man’s aggressive tone made everyone in the room uneasy. What does “aggressive” mean here?",["Cheerful and friendly","Quiet and shy","Forceful or overly assertive","Calm and gentle"],2],
+          ["She alluded to the problem at hand but didn’t say anything more about it. What does “allude” mean here?",["To refer to something indirectly","To explain in complete detail","To shout about publicly","To completely deny"],0]
+        ]},
+      { t:"SAT Vocabulary — Batch 2 (A–B)", o:"Study list: Ambiguity (n.) — uncertainty or multiple interpretations. Ambivalence (n.) — mixed or conflicting feelings. Ameliorate (v.) — to improve or make better. Amplify (v.) — to increase in size or effect. Amusing (adj.) — entertaining or humorous. Analogous (adj.) — similar but not identical. Annotate (v.) — to add notes or comments. Announce (v.) — to make a public statement. Anomaly (n.) — something different from the norm. Antagonistic (adj.) — showing hostility or opposition. Antecedent (n.) — a preceding event or condition. Anticipate (v.) — to expect or predict. Antipathy (n.) — a strong feeling of dislike. Apex (n.) — the highest point of something. Appropriate (adj.) — suitable for a specific situation. Approximate (adj.) — nearly accurate or close to exact. Arcane (adj.) — mysterious or known by few. Arduous (adj.) — difficult and requiring great effort. Assemble (v.) — to gather or put together. Austere (adj.) — extremely plain, without luxury. Avoid (v.) — to stay away from or prevent. Beneficial (adj.) — producing good results. Benevolent (adj.) — kind and generous. Bold (adj.) — courageous or striking. Borrow (v.) — to take temporarily.",
+        p:[
+          ["The ambiguity in his vague statement caused confusion. What does “ambiguity” mean here?",["An obvious factual error","Complete clarity and precision","Uncertainty or multiple possible interpretations","A strong feeling of anger"],2],
+          ["Jessie felt ambivalence about moving to a new city. What does “ambivalence” mean here?",["Complete excitement and certainty","A strong dislike of change","Total indifference and boredom","Having mixed or conflicting feelings"],3],
+          ["The new policy aims to ameliorate working conditions for all employees. What does “ameliorate” mean here?",["To completely eliminate","To make worse","To improve or make better","To leave unchanged"],2],
+          ["The microphone will amplify your voice so the whole room can hear you. What does “amplify” mean here?",["To silence completely","To increase in size or effect","To distort or change the sound","To record for later"],1],
+          ["Jason's joke was quite amusing, and everyone laughed. What does “amusing” mean here?",["Offensive and rude","Confusing and hard to follow","Entertaining or humorous","Extremely serious"],2],
+          ["Green onions are considered analogous to spring onions. What does “analogous” mean here?",["Similar but not identical","Opposite in nearly every way","Completely identical in every way","Unrelated to each other"],0],
+          ["Please annotate the medical text with your observations. What does “annotate” mean here?",["To translate into another language","To memorize completely","To delete unnecessary parts","To add notes or comments to"],3],
+          ["The CEO will announce the new policy tomorrow. What does “announce” mean here?",["To secretly plan","To cancel entirely","To rewrite completely","To make a public statement about"],3],
+          ["This result is an anomaly and very rarely happens. What does “anomaly” mean here?",["A calculation error","A completely normal, expected result","Something that differs from the norm","A repeated pattern"],2],
+          ["His antagonistic behavior created tension at work. What does “antagonistic” mean here?",["Showing extreme shyness","Showing hostility or opposition","Showing warmth and cooperation","Showing careful planning"],1]
+        ],
+        a:[
+          ["The antecedent to the war was political unrest. What does “antecedent” mean here?",["A preceding event or condition","The final outcome of an event","An unrelated coincidence","A future prediction"],0],
+          ["Does the weatherman anticipate a rise in temperatures next week? What does “anticipate” mean here?",["To completely ignore","To regret afterward","To prevent from happening","To expect or predict"],3],
+          ["Her antipathy toward the professor was obvious: she rolled her eyes whenever he entered the room. What does “antipathy” mean here?",["Complete indifference","A strong feeling of dislike","A strong feeling of admiration","Mild curiosity"],1],
+          ["The spring play was the apex of our school year. What does “apex” mean here?",["The lowest point of something","An unimportant detail","The highest point of something","The very beginning of something"],2],
+          ["Lily's velvet dress was appropriate for the formal occasion. What does “appropriate” mean here?",["Completely out of place","Too expensive to wear","Uncomfortable to wear","Suitable for a specific situation"],3],
+          ["The approximate cost of the repair is $50. What does “approximate” mean here?",["Exactly precise, to the penny","Far higher than expected","Nearly accurate or close to exact","Completely unknown"],2],
+          ["The ancient book contained arcane knowledge. What does “arcane” mean here?",["Mysterious or known by very few","Widely known by everyone","Recently discovered","Simple and easy to understand"],0],
+          ["The steep hike up the mountain was arduous. What does “arduous” mean here?",["Difficult and requiring great effort","Quick and effortless","Short and simple","Relaxing and enjoyable"],0],
+          ["We need to assemble the bed if we want a place to sleep tonight. What does “assemble” mean here?",["To gather or put together","To take apart","To purchase new","To sell"],0],
+          ["The monk's austere lifestyle included only a bed, a chair, and a single candle. What does “austere” mean here?",["Cheerful and colorful","Extremely plain and without luxury","Chaotic and disorganized","Extremely luxurious and comfortable"],1],
+          ["Mara hates fighting, so she always tries to avoid conflict. What does “avoid” mean here?",["To enjoy thoroughly","To win decisively","To stay away from or prevent","To start deliberately"],2],
+          ["A balanced diet is beneficial to your health. What does “beneficial” mean here?",["Having no effect at all","Producing harmful results","Being extremely expensive","Producing good results"],3],
+          ["Many cultures believe in benevolent spirits that watch over people. What does “benevolent” mean here?",["Kind and generous","Ancient and forgotten","Invisible and silent","Cruel and vengeful"],0],
+          ["Elsie made a bold move by quitting her job to start her own business. What does “bold” mean here?",["Foolish and thoughtless","Courageous or striking","Cautious and hesitant","Ordinary and unremarkable"],1],
+          ["Libraries will let you borrow books for several weeks. What does “borrow” mean here?",["To take temporarily","To repair","To donate","To purchase permanently"],0]
+        ]},
+      { t:"SAT Vocabulary — Batch 3 (B–C)", o:"Study list: Buttress (v.) — to support or strengthen. Bypass (v.) — to go around or avoid. Calibrate (v.) — to adjust for precision. Candid (adj.) — direct and blunt. Carelessly (adv.) — without caution. Catastrophic (adj.) — disastrous, causing great damage. Cause (n.) — a reason for an action or event. Characterization (n.) — the way a character is described. Circumvent (v.) — to find a way around. Coincidence (n.) — a surprising, unexpected event. Collaboration (n.) — working together on a task. Commercialization (n.) — the process of making something a business. Committed (adj.) — dedicated to a cause or task. Common (adj.) — occurring frequently or shared by many. Compelling (adj.) — captivating or persuasive. Competent (adj.) — having the necessary ability or skill. Complementary (adj.) — enhancing or completing another. Complexity (n.) — the state of being intricate or complicated. Compose (v.) — to create or write. Compound (v.) — to intensify or combine. Comprise (v.) — to consist of or include. Conceal (v.) — to hide or keep secret. Concede (v.) — to admit or yield. Conceptualize (v.) — to form an idea or concept. Concerning (adj.) — causing worry or distress.",
+        p:[
+          ["The evidence will buttress his argument. What does “buttress” mean here?",["To support or strengthen","To weaken or undermine","To contradict","To ignore completely"],0],
+          ["We took a shortcut to bypass traffic. What does “bypass” mean here?",["To report to authorities","To go around or avoid","To drive directly into","To measure carefully"],1],
+          ["The scientist had to calibrate the instrument to ensure accurate measurements. What does “calibrate” mean here?",["To discard as useless","To invent from scratch","To copy exactly","To adjust for precision"],3],
+          ["Josh is candid about his desire to become an actor. What does “candid” mean here?",["Direct and blunt","Boastful and arrogant","Secretive and evasive","Nervous and unsure"],0],
+          ["He carelessly left his keys on the bus. What does “carelessly” mean here?",["With great caution","Happily and proudly","Without caution","On purpose, deliberately"],2],
+          ["The catastrophic hurricane destroyed dozens of homes. What does “catastrophic” mean here?",["Predictable and expected","Beneficial in the long run","Mild and harmless","Disastrous or causing great damage"],3],
+          ["The fire's cause is still unknown. What does “cause” mean here?",["The final result of an event","A type of insurance","A reason for an action or event","A witness to an event"],2],
+          ["The novel's characterization was deep and complex. What does “characterization” mean here?",["The book's total page count","The setting of the story","The way a character is described","The author's real biography"],2],
+          ["They found a loophole to circumvent the rule. What does “circumvent” mean here?",["To find a way around","To publicly announce","To completely rewrite","To strictly enforce"],0],
+          ["Meeting my neighbor at the airport was a coincidence. What does “coincidence” mean here?",["A surprising and unexpected event","An argument between friends","A regular, scheduled event","A carefully planned meeting"],0]
+        ],
+        a:[
+          ["The scientists' collaboration led to a breakthrough. What does “collaboration” mean here?",["Arguing over credit","Working alone in secret","Competing against each other","Working together on a task"],3],
+          ["The commercialization of the product increased sales. What does “commercialization” mean here?",["The process of making something into a business","The process of destroying something","The process of banning something","The process of studying something"],0],
+          ["Ava is committed to her studies and always wants top grades. What does “committed” mean here?",["Uninterested and distracted","Dedicated to a cause or task","Confused about her goals","Forced against her will"],1],
+          ["It's very common for students to feel stressed before exams. What does “common” mean here?",["Occurring frequently or shared by many","Extremely rare","Illegal in most places","Considered shameful"],0],
+          ["The debater gave a compelling argument. What does “compelling” mean here?",["Confusing and contradictory","Captivating or persuasive","Boring and forgettable","Short and incomplete"],1],
+          ["Noah has worked at this job for a long time and is a competent engineer. What does “competent” mean here?",["Having the necessary ability or skill","New and inexperienced","Lacking basic skills","Overly confident without reason"],0],
+          ["The artist and the engineer have skills that are complementary in the project. What does “complementary” mean here?",["Enhancing or completing one another","In direct conflict with one another","Identical to one another","Unrelated to one another"],0],
+          ["The complexity of the 1,000-piece puzzle made it challenging. What does “complexity” mean here?",["The state of being intricate or complicated","The size of something","The total cost of something","The state of being extremely simple"],0],
+          ["Jordan plans to compose a new symphony. What does “compose” mean here?",["To destroy or erase","To criticize harshly","To memorize","To create or write"],3],
+          ["The traffic was compounded by bad weather. What does “compound” mean here?",["To predict in advance","To relieve or lessen","To separate completely","To intensify or combine with something else"],3],
+          ["The book comprises ten chapters. What does “comprise” mean here?",["To exclude entirely","To consist of or include","To summarize briefly","To translate"],1],
+          ["Luca tried to conceal his disappointment. What does “conceal” mean here?",["To hide or keep secret","To forget about","To exaggerate","To loudly express"],0],
+          ["She conceded that she was wrong during the argument. What does “concede” mean here?",["To laugh off","To completely deny","To argue further","To admit or yield"],3],
+          ["In this lab, scientists conceptualize new theories on viruses. What does “conceptualize” mean here?",["To disprove completely","To memorize exactly","To form an idea or concept","To physically build"],2],
+          ["The news about the approaching hurricane is quite concerning. What does “concerning” mean here?",["Causing worry or distress","Mildly amusing","Completely irrelevant","Causing celebration"],0]
+        ]},
+      { t:"SAT Vocabulary — Batch 4 (C–D)", o:"Study list: Condition (n.) — the state that something is in. Confident (adj.) — feeling sure or self-assured. Conflated (adj.) — combined together in a misleading way. Conform (v.) — to comply with rules or expectations. Consensus (n.) — general agreement. Consistent (adj.) — acting the same way over time. Conspicuous (adj.) — easily noticed or standing out. Constant (adj.) — occurring continuously. Contentious (adj.) — causing disagreement or debate. Contingent (adj.) — dependent on something else. Contradict (v.) — to be in contrast with. Contrived (adj.) — artificial or overly planned. Controversial (adj.) — causing public disagreement. Cordially (adv.) — in a warm, friendly manner. Corroborate (v.) — to provide evidence supporting a claim. Corrosive (adj.) — gradually destructive or harmful. Costly (adj.) — expensive or requiring sacrifice. Counteract (v.) — to work in opposition to. Critical (adj.) — expressing strong analysis or judgment. Criticize (v.) — to express disapproval of. Deceptive (adj.) — misleading or dishonest. Deciding (adj.) — determining or influencing an outcome. Decisive (adj.) — conclusive and firm. Deficient (adj.) — not enough in degree or amount. Defunct (adj.) — no longer existing or functional.",
+        p:[
+          ["The car I bought is in excellent condition. What does “condition” mean here?",["The brand name of a product","The state that something is in","The price that was paid","The color of an object"],1],
+          ["Michael is confident in his abilities as a basketball player. What does “confident” mean here?",["Feeling bored and uninterested","Feeling angry and frustrated","Feeling sure or self-assured","Feeling nervous and unsure"],2],
+          ["The two separate issues were conflated in the argument. What does “conflated” mean here?",["Explained very clearly","Kept completely separate","Proven to be false","Combined together in a misleading way"],3],
+          ["The alternative rocker refuses to conform to societal norms. What does “conform” mean here?",["To ignore completely","To comply with rules or expectations","To rebel loudly against","To create new rules for others"],1],
+          ["The team finally reached a consensus on the decision. What does “consensus” mean here?",["A heated disagreement","A formal vote by outsiders","General agreement among a group","A random guess"],2],
+          ["My grandmother's knitting is always consistent in quality. What does “consistent” mean here?",["Getting worse over time","Improving dramatically over time","Changing unpredictably each time","Acting or performing the same way over time"],3],
+          ["Veronica's red dress was conspicuous in the crowd. What does “conspicuous” mean here?",["Slightly out of fashion","Impossible to see","Easily noticed or standing out","Blending in perfectly"],2],
+          ["The criminal lived in constant fear that he'd be found out. What does “constant” mean here?",["Occurring continuously, without stopping","Occurring rarely","Occurring only at night","Occurring only once"],0],
+          ["Politics are highly contentious these days. What does “contentious” mean here?",["Causing widespread agreement","Causing disagreement or debate","Completely uninteresting","Extremely simple to understand"],1],
+          ["Our family ski trip is contingent on the weather. What does “contingent” mean here?",["Already canceled","Completely guaranteed","Dependent on something else","Unrelated to any other factor"],2]
+        ],
+        a:[
+          ["The camera footage contradicts his alibi. What does “contradict” mean here?",["To improve upon","To have no relation to","To completely confirm","To be in contrast with"],3],
+          ["The movie's plot felt contrived and unrealistic. What does “contrived” mean here?",["Well-researched and factual","Artificial or overly planned","Extremely realistic","Completely natural and spontaneous"],1],
+          ["The judge's decision to free the criminal was highly controversial. What does “controversial” mean here?",["Completely unnoticed by the public","Causing universal approval","Required by law","Causing public disagreement"],3],
+          ["The two old friends greeted each other cordially. What does “cordially” mean here?",["In a nervous and shy manner","In a cold and distant manner","In a rushed and careless manner","In a warm and friendly manner"],3],
+          ["The note signed by her father corroborates her claim that she was absent from class. What does “corroborate” mean here?",["To disprove a claim","To ignore a claim entirely","To provide evidence supporting a claim","To exaggerate a claim"],2],
+          ["The corrosive chemical has ruined the paint on my car. What does “corrosive” mean here?",["Bright and colorful","Gently protective","Completely harmless","Gradually destructive or harmful"],3],
+          ["The mistake was a costly one and caused the company to go bankrupt. What does “costly” mean here?",["Quick and easy to fix","Minor and unimportant","Free of charge","Expensive or requiring great sacrifice"],3],
+          ["This ingredient seems to counteract the effects of the others. What does “counteract” mean here?",["To work together with","To multiply the effect of","To work in opposition to","To have no effect on"],2],
+          ["The review was highly critical of the film. What does “critical” mean here?",["Expressing strong analysis or judgment","Expressing confusion","Expressing complete indifference","Expressing strong praise only"],0],
+          ["My father tends to criticize others harshly. What does “criticize” mean here?",["To ignore completely","To express strong approval of","To express disapproval of","To imitate closely"],2],
+          ["The advertisement was deceptive in its claims of weight loss. What does “deceptive” mean here?",["Legally required","Extremely boring","Completely truthful","Misleading or dishonest"],3],
+          ["The final goal was the deciding factor in the match. What does “deciding” mean here?",["Occurring after the outcome was known","Determining or influencing the outcome","Having no effect on the outcome","Related only to the crowd's mood"],1],
+          ["My boss's decisive leadership helped solve our company's crisis. What does “decisive” mean here?",["Distant and uninvolved","Careless and reckless","Hesitant and unsure","Conclusive and firm"],3],
+          ["I feel as though the sources for my paper are deficient. What does “deficient” mean here?",["Perfectly balanced","Not enough in degree or amount","Entirely fabricated","More than enough"],1],
+          ["After people stopped using fax machines, the fax company became defunct. What does “defunct” mean here?",["Newly founded","Legally required","Extremely profitable","No longer existing or functional"],3]
+        ]},
+      { t:"SAT Vocabulary — Batch 5 (D)", o:"Study list: Delegate (v.) — to assign tasks or authority to others. Deliberation (n.) — careful consideration or discussion. Delicate (adj.) — fragile, requiring careful handling. Demarcate (v.) — to set boundaries or distinguish. Derived (adj.) — obtained or developed from a source. Despise (v.) — to strongly dislike or look down upon. Desultory (adj.) — lacking a clear plan or enthusiasm. Determine (v.) — to establish or decide. Deviate (v.) — to move away from a set path. Devise (v.) — to come up with a plan. Diminish (v.) — to decrease in size or importance. Directed (adj.) — managed or guided. Disagreement (n.) — a difference of opinion. Disastrous (adj.) — causing great harm or failure. Disconcerting (adj.) — causing discomfort or confusion. Discord (n.) — disagreement or conflict. Discount (v.) — to disregard or reduce in importance. Discourage (v.) — to dissuade or deter. Discretion (n.) — the ability to make responsible, careful choices. Disengage (v.) — to separate or withdraw. Dismiss (v.) — to reject or refuse to consider. Disorienting (adj.) — causing confusion or loss of direction. Disparage (v.) — to belittle or speak negatively about. Disparate (adj.) — essentially different or unconnected. Dispute (n.) — a disagreement or argument.",
+        p:[
+          ["A good leader knows how to delegate responsibilities. What does “delegate” mean here?",["To refuse a task entirely","To keep all tasks for oneself","To criticize others' work","To assign tasks or authority to others"],3],
+          ["After much deliberation, they made their decision. What does “deliberation” mean here?",["A sudden, unplanned choice","A written contract","Careful consideration or discussion","A public vote"],2],
+          ["The delicate glass sculpture broke easily. What does “delicate” mean here?",["Bright and colorful","Heavy and difficult to move","Extremely sturdy and tough","Fragile or requiring careful handling"],3],
+          ["The Tornio river demarcates the border between Sweden and Finland. What does “demarcate” mean here?",["To flood repeatedly","To connect two countries as one","To completely erase","To set boundaries or distinguish"],3],
+          ["The word “aqua” is derived from Latin. What does “derived” mean here?",["Invented with no prior source","Obtained or developed from a source","Mistranslated","Banned from use"],1],
+          ["The judge despises dishonesty. What does “despise” mean here?",["To be confused by","To strongly dislike or look down upon","To feel neutral about","To strongly admire"],1],
+          ["The tired boy's desultory efforts did not impress the coach. What does “desultory” mean here?",["Perfectly organized","Lacking a clear plan or enthusiasm","Aggressive and forceful","Extremely energetic and focused"],1],
+          ["The final exam will determine your grade. What does “determine” mean here?",["To completely ignore","To slightly influence by accident","To establish or decide","To cancel entirely"],2],
+          ["When new evidence was uncovered, the lawyer deviated from the original plan. What does “deviate” mean here?",["To move away from a set path or plan","To forget the plan entirely","To repeat the same plan exactly","To strictly follow a set path"],0],
+          ["Lana devised a plan to make herself famous. What does “devise” mean here?",["To abandon a plan","To copy someone else's plan exactly","To come up with a plan","To criticize a plan"],2]
+        ],
+        a:[
+          ["The politician's influence has diminished over time. What does “diminish” mean here?",["To decrease in size or importance","To stay exactly the same","To disappear instantly","To increase in size or importance"],0],
+          ["This new film was directed by a renowned artist. What does “directed” mean here?",["Filmed by accident","Financed entirely","Written entirely","Managed or guided"],3],
+          ["An intense disagreement arose over the contract terms. What does “disagreement” mean here?",["A written agreement","A difference of opinion","A friendly conversation","A financial payment"],1],
+          ["The earthquake had disastrous consequences for the island. What does “disastrous” mean here?",["Causing great harm or failure","Causing minor inconvenience only","Having no noticeable effect","Producing surprisingly good results"],0],
+          ["My girlfriend's sudden change in behavior is disconcerting. What does “disconcerting” mean here?",["Very reassuring","Completely unnoticeable","Causing discomfort or confusion","Causing great relief"],2],
+          ["Disputes over money caused intense discord in the family. What does “discord” mean here?",["Financial success","Harmony and peace","Disagreement or conflict","A shared celebration"],2],
+          ["The teacher discounted his students' concerns. What does “discount” mean here?",["To disregard or reduce in importance","To fully address and solve","To financially reward","To publicly praise"],0],
+          ["Luna tried to discourage her brother from moving out. What does “discourage” mean here?",["To remain neutral about","To strongly encourage","To dissuade or deter","To help financially"],2],
+          ["The detective handled the matter with great discretion. What does “discretion” mean here?",["Aggressive, forceful action","A complete lack of care","The ability to make responsible, careful choices","Public announcement of every detail"],2],
+          ["I was exhausted, so I tried to disengage from the argument. What does “disengage” mean here?",["To separate or withdraw from","To record for evidence","To join enthusiastically","To escalate further"],0],
+          ["The teacher dismissed the idea to end class early. What does “dismiss” mean here?",["To vote formally on","To enthusiastically accept","To reject or refuse to consider","To postpone until later"],2],
+          ["The vast corn maze was disorienting. What does “disorienting” mean here?",["Perfectly easy to navigate","Very relaxing","Causing a feeling of pride","Causing confusion or loss of direction"],3],
+          ["The politician disparaged his opponent's ideas on tax cuts. What does “disparage” mean here?",["To belittle or speak negatively about","To carefully explain","To strongly praise","To agree with completely"],0],
+          ["Many European countries have disparate Christmas traditions. What does “disparate” mean here?",["Officially banned","Essentially different or unconnected","Recently invented","Essentially identical"],1],
+          ["The neighbors had a dispute over the new fence. What does “dispute” mean here?",["A friendly agreement","A disagreement or argument","A legal contract","A shared celebration"],1]
+        ]},
+      { t:"SAT Vocabulary — Batch 6 (D–E)", o:"Study list: Distinct (adj.) — clearly different or separate. Distract (v.) — to divert attention. Distressed (adj.) — suffering from anxiety or pain. Diverge (v.) — to move apart or differ. Diverse (adj.) — showing a wide variety. Dominance (n.) — the state of being in control or superior. Dormant (adj.) — inactive but capable of becoming active. Dynamic (adj.) — constantly changing or energetic. Earnest (adj.) — serious and sincere. Eclipse (v.) — to overshadow or surpass. Eloquent (adj.) — having refined, expressive communication skills. Elusive (adj.) — hard to find or understand. Encompass (v.) — to include or surround. Encounter (v.) — to meet or face unexpectedly. Encourage (v.) — to support or inspire. Enduring (adj.) — lasting over time. Evidence (n.) — information that supports a conclusion. Evoke (v.) — to draw forth or call up. Exacerbate (v.) — to make a problem worse. Exactitude (n.) — the quality of being precise or accurate. Exaggerate (v.) — to overstate or magnify beyond the truth. Exceed (v.) — to go beyond a limit. Exemplify (v.) — to serve as a typical example of. Exhaustive (adj.) — thorough and complete. Expansion (n.) — the act of increasing in size or scope.",
+        p:[
+          ["My twin sons have distinct personalities. What does “distinct” mean here?",["Clearly different or separate","Exactly identical","Poorly defined","Hidden from view"],0],
+          ["The rattling noise distracted Javi from his work. What does “distract” mean here?",["To sharpen focus on","To divert attention","To completely silence","To reward with praise"],1],
+          ["The woman looked distressed after the doctor's call. What does “distressed” mean here?",["Feeling proud and confident","Feeling calm and relieved","Feeling bored and tired","Suffering from anxiety or pain"],3],
+          ["My parents' opinions on politics began to diverge as they grew older. What does “diverge” mean here?",["To be forgotten entirely","To merge into one","To move apart or differ","To become identical"],2],
+          ["New York City has a diverse population. What does “diverse” mean here?",["Showing almost no variety","Showing a wide variety","Rapidly shrinking","Extremely wealthy"],1],
+          ["The company's dominance in the market is evident. What does “dominance” mean here?",["The state of being illegal","The state of being bankrupt","The state of being in control or superior","The state of being brand new"],2],
+          ["The volcano beneath Mount Fuji has been dormant for centuries. What does “dormant” mean here?",["Inactive but capable of becoming active","Constantly erupting","Permanently destroyed","Recently discovered"],0],
+          ["My coworker is a dynamic speaker who commands attention wherever she goes. What does “dynamic” mean here?",["Quiet and monotone","Slow and predictable","Constantly changing or energetic","Nervous and hesitant"],2],
+          ["He felt terrible about breaking the mirror and made an earnest apology. What does “earnest” mean here?",["Serious and sincere","Loud and dramatic","Sarcastic and mocking","Careless and rushed"],0],
+          ["The headliner's performance eclipsed all others in the concert. What does “eclipse” mean here?",["To follow closely behind","To overshadow or surpass","To cancel entirely","To copy exactly"],1]
+        ],
+        a:[
+          ["His speech was not only eloquent but also extremely compelling. What does “eloquent” mean here?",["Written by someone else","Having refined and expressive communication skills","Confusing and hard to follow","Extremely short"],1],
+          ["Nothing became clearer, and the answer remained elusive. What does “elusive” mean here?",["Already well known","Written down clearly","Hard to find or understand","Obvious and simple"],2],
+          ["The project encompasses multiple disciplines. What does “encompass” mean here?",["To delay indefinitely","To include or surround","To simplify greatly","To exclude entirely"],1],
+          ["She encountered an old friend at the store. What does “encounter” mean here?",["To write a letter to","To meet or face unexpectedly","To call on the phone","To deliberately avoid"],1],
+          ["Teachers often encourage students to ask questions. What does “encourage” mean here?",["To support or inspire","To ignore completely","To punish or scold","To discourage or prevent"],0],
+          ["Their 50-year friendship is enduring. What does “enduring” mean here?",["Full of arguments","Lasting over time","Recently formed","Ending very quickly"],1],
+          ["There is strong evidence to support the theory. What does “evidence” mean here?",["Information that supports a conclusion","A guess made at random","A personal opinion with no support","A rule that must be followed"],0],
+          ["Horror movies are great at evoking fear. What does “evoke” mean here?",["To completely eliminate","To draw forth or call up","To disguise or hide","To laugh at"],1],
+          ["His rude comments only exacerbated the tense situation. What does “exacerbate” mean here?",["To calm a situation down","To resolve a problem completely","To have no effect on a situation","To make a problem worse"],3],
+          ["The scientist's exactitude ensured reliable results. What does “exactitude” mean here?",["The quality of being fast","The quality of being creative","The quality of being precise or accurate","The quality of being careless"],2],
+          ["My cousin tends to exaggerate his achievements. What does “exaggerate” mean here?",["To overstate or magnify beyond the truth","To refuse to discuss","To understate or downplay","To describe with perfect accuracy"],0],
+          ["The driver exceeded the speed limit by nearly 30 miles an hour. What does “exceed” mean here?",["To arrive at a limit exactly","To stay well under a limit","To ignore a limit's existence","To go beyond a limit"],3],
+          ["The woman's kindness to her neighbors exemplifies true generosity. What does “exemplify” mean here?",["To secretly hide","To serve as a typical example of","To completely contradict","To exaggerate falsely"],1],
+          ["The 300-page report provided an exhaustive analysis. What does “exhaustive” mean here?",["Thorough and complete","Brief and incomplete","Confusing and disorganized","Outdated and irrelevant"],0],
+          ["The company's expansion into international markets has been successful. What does “expansion” mean here?",["The act of merging with a rival","The act of shutting down operations","The act of losing money","The act of increasing in size or scope"],3]
+        ]},
+      { t:"SAT Vocabulary — Batch 7 (E–I)", o:"Study list: Expensive (adj.) — costing a lot of money. Experiment (n.) — a test to discover something new. Explicable (adj.) — able to be explained. Exploit (v.) — to take advantage of unfairly. Extensive (adj.) — covering a large area or scope. Extraneous (adj.) — unrelated or unnecessary. Fabricate (v.) — to invent or create, often dishonestly. Foretell (v.) — to predict or anticipate. Foster (v.) — to encourage or promote the development of. Fragile (adj.) — easily broken or delicate. Fruitless (adj.) — failing to achieve the desired result. Genuine (adj.) — authentic or real. Grapple (v.) — to struggle or wrestle with. Habitual (adj.) — done regularly or repeatedly. Haphazard (adj.) — lacking organization or planning. Hibernation (n.) — a state of dormancy or deep sleep. Highlight (v.) — to emphasize or make noticeable. Hinder (v.) — to obstruct or slow progress. Hoard (v.) — to accumulate and store excessively. Homogeneous (adj.) — uniform or similar throughout. Hypothesize (v.) — to form a theory or assumption. Imaginative (adj.) — creative and full of new ideas. Imitation (n.) — a copy or replica of something. Imminent (adj.) — about to happen soon. Immune (adj.) — resistant to disease or harm.",
+        p:[
+          ["My sister's diamond ring was extremely expensive. What does “expensive” mean here?",["Made of fake materials","Given away for free","Costing a lot of money","Costing almost nothing"],2],
+          ["The scientist conducted an experiment to test the theory. What does “experiment” mean here?",["A test to discover something new","A public celebration","A casual guess","A final, published conclusion"],0],
+          ["Once I knew the full story, my boyfriend's actions were explicable given the circumstances. What does “explicable” mean here?",["Able to be explained","Impossible to explain","Extremely rare","Completely illegal"],0],
+          ["The mining company was accused of exploiting workers. What does “exploit” mean here?",["To generously reward","To carefully train","To take advantage of unfairly","To formally hire"],2],
+          ["The Art Institute of Chicago has an extensive Impressionist collection. What does “extensive” mean here?",["Poorly organized","Covering a large area or scope","Recently started","Covering a very small scope"],1],
+          ["The report contained too much extraneous information that didn't matter to the trial. What does “extraneous” mean here?",["Written in a foreign language","Essential and required","Illegal to include","Unrelated or unnecessary"],3],
+          ["The criminal fabricated evidence to support his bogus claim. What does “fabricate” mean here?",["To destroy completely","To translate accurately","To discover honestly","To invent or create, often dishonestly"],3],
+          ["Ancient prophecies foretold the end of the world. What does “foretell” mean here?",["To celebrate","To predict or anticipate","To disprove","To completely forget"],1],
+          ["Teachers should strive to foster creativity in students. What does “foster” mean here?",["To punish","To ignore entirely","To encourage or promote the development of","To discourage or suppress"],2],
+          ["The glass vase is very fragile. What does “fragile” mean here?",["Waterproof","Easily broken or delicate","Very heavy","Extremely strong and sturdy"],1]
+        ],
+        a:[
+          ["Their search for survivors was fruitless. What does “fruitless” mean here?",["Dangerous but rewarding","Highly successful","Quick and easy","Failing to achieve the desired result"],3],
+          ["His apology seemed genuine. What does “genuine” mean here?",["Extremely brief","Fake or insincere","Authentic or real","Legally required"],2],
+          ["The country is grappling with economic issues. What does “grapple” mean here?",["To quickly resolve","To struggle or wrestle with","To completely ignore","To celebrate proudly"],1],
+          ["His habitual lateness annoyed his coworkers. What does “habitual” mean here?",["Done regularly or repeatedly","Happening only once","Completely unexpected","Officially scheduled"],0],
+          ["The project was completed in a haphazard manner. What does “haphazard” mean here?",["Lacking organization or planning","Extremely well organized","Ahead of schedule","Slowly and carefully"],0],
+          ["Many bear species go into hibernation during the winter. What does “hibernation” mean here?",["A period of intense hunting","A state of dormancy or deep sleep","A long migration journey","A mating ritual"],1],
+          ["The article highlights key points of the debate. What does “highlight” mean here?",["To translate into another language","To disprove entirely","To emphasize or make noticeable","To completely hide"],2],
+          ["The heavy traffic hindered our journey. What does “hinder” mean here?",["To end a journey early","To speed up progress","To have no effect on progress","To obstruct or slow progress"],3],
+          ["He hoarded food supplies and toilet paper during the pandemic. What does “hoard” mean here?",["To accumulate and store excessively","To sell quickly","To waste carelessly","To give away generously"],0],
+          ["The population of the village is homogeneous. What does “homogeneous” mean here?",["Extremely diverse","Divided by conflict","Uniform or similar throughout","Rapidly shrinking"],2],
+          ["Scientists hypothesize about the origin of the universe. What does “hypothesize” mean here?",["To measure precisely","To form a theory or assumption","To completely dismiss an idea","To prove with total certainty"],1],
+          ["The artist's work is highly imaginative. What does “imaginative” mean here?",["Dull and unoriginal","Extremely expensive","Copied from another artist","Creative and full of new ideas"],3],
+          ["The purse was an imitation of a designer brand. What does “imitation” mean here?",["A completely unrelated item","A damaged, broken item","The original, authentic version","A copy or replica of something"],3],
+          ["A storm is imminent according to the forecast. What does “imminent” mean here?",["Extremely unlikely to happen","Impossible to predict","About to happen soon","Already over"],2],
+          ["He's immune to the virus due to vaccination. What does “immune” mean here?",["Highly vulnerable to disease","Resistant to disease or harm","Unaware of a disease's existence","Contagious to others"],1]
         ]}
     ]},
     reading: { name:"Reading Comprehension", topics: [
@@ -274,127 +454,127 @@ const CURRICULUM = {
         passageP:"Sleep is often the first thing sacrificed when schedules get busy, but research increasingly shows this is a costly trade-off. During deep sleep, the brain consolidates memories, clears out metabolic waste, and repairs tissue. Teenagers who sleep fewer than seven hours a night show measurable declines in attention, mood regulation, and academic performance. Some schools have responded by pushing start times later, a change linked to improved grades and fewer car accidents among student drivers.",
         passageA:"Standardized testing has long dominated how schools measure student achievement, but a growing number of districts are experimenting with portfolio-based assessment instead. Under this model, students compile a body of work over a semester — essays, projects, presentations — that a panel evaluates against a rubric. Proponents argue portfolios capture growth and critical thinking that a single test cannot. Critics counter that portfolios are harder to score consistently and take far more teacher time to evaluate fairly.",
         p:[
-          ["What is the central idea of the passage?",["Car accidents are caused only by bad weather","Sleep deprivation has real costs, and schools are adjusting policy in response","Sleep has no effect on grades","Teenagers should never stay up late"],1],
-          ["Which detail supports the idea that sleep affects the brain directly?",["Car accidents decreased","Some schools changed start times","During deep sleep, the brain consolidates memories and clears waste","Teenagers have busy schedules"],2],
-          ["What evidence does the author use to support the claim that later start times help?",["Improved grades and fewer car accidents among student drivers","A survey of teacher opinions","Nothing — it's just an opinion","A comparison to adult sleep needs"],0],
-          ["What can you infer is the author's purpose in this passage?",["To entertain with a story about students","To inform readers about a health issue and a policy response to it","To argue that school should be canceled","To sell a sleep product"],1]
+          ["What is the central idea of the passage?",["Sleep has no effect on grades","Teenagers should never stay up late","Car accidents are caused only by bad weather","Sleep deprivation has real costs, and schools are adjusting policy in response"],3],
+          ["Which detail supports the idea that sleep affects the brain directly?",["Car accidents decreased","During deep sleep, the brain consolidates memories and clears waste","Some schools changed start times","Teenagers have busy schedules"],1],
+          ["What evidence does the author use to support the claim that later start times help?",["A comparison to adult sleep needs","A survey of teacher opinions","Improved grades and fewer car accidents among student drivers","Nothing — it's just an opinion"],2],
+          ["What can you infer is the author's purpose in this passage?",["To argue that school should be canceled","To inform readers about a health issue and a policy response to it","To sell a sleep product","To entertain with a story about students"],1]
         ],
         a:[
-          ["What is the central idea of the passage?",["All schools have abandoned standardized tests","Portfolio-based assessment is a debated alternative to standardized testing","Portfolios are always better than tests","Testing has no critics"],1],
-          ["Which detail is evidence FOR portfolio assessment, according to the passage?",["It is easier to score than a test","It takes less teacher time","It captures growth and critical thinking a single test cannot","It is required by law"],2],
-          ["Which detail represents a counterargument in the passage?",["Students compile work over a semester","Portfolios are harder to score consistently and take more teacher time","Portfolios include essays and projects","A panel evaluates the portfolio"],1],
-          ["The author's tone toward this issue is best described as:",["Strongly against portfolios","Strongly in favor of portfolios","Balanced, presenting both sides","Sarcastic"],2],
-          ["What structure does the author use to organize this passage?",["Compare the claims for and against an idea","Describe a single event in detail","Tell a story in chronological order","List steps in a process"],0],
-          ["Based on the passage, what would the author most likely agree with?",["Teachers should stop grading altogether","Standardized tests should be banned entirely","Portfolios have no downsides","Both testing methods have real tradeoffs worth weighing"],3]
+          ["What is the central idea of the passage?",["Testing has no critics","Portfolio-based assessment is a debated alternative to standardized testing","All schools have abandoned standardized tests","Portfolios are always better than tests"],1],
+          ["Which detail is evidence FOR portfolio assessment, according to the passage?",["It is easier to score than a test","It is required by law","It captures growth and critical thinking a single test cannot","It takes less teacher time"],2],
+          ["Which detail represents a counterargument in the passage?",["Portfolios are harder to score consistently and take more teacher time","A panel evaluates the portfolio","Portfolios include essays and projects","Students compile work over a semester"],0],
+          ["The author's tone toward this issue is best described as:",["Strongly against portfolios","Balanced, presenting both sides","Strongly in favor of portfolios","Sarcastic"],1],
+          ["What structure does the author use to organize this passage?",["Tell a story in chronological order","Compare the claims for and against an idea","List steps in a process","Describe a single event in detail"],1],
+          ["Based on the passage, what would the author most likely agree with?",["Teachers should stop grading altogether","Portfolios have no downsides","Both testing methods have real tradeoffs worth weighing","Standardized tests should be banned entirely"],2]
         ]},
       { t:"Analyzing Argument & Rhetoric", o:"Identify an author's claim, evaluate their supporting evidence and reasoning, and recognize rhetorical appeals (ethos, pathos, logos).",
         p:[
-          ["A toothpaste ad says “9 out of 10 dentists recommend this brand,” leaning on the credibility of dentists as experts. This is mainly an appeal to:",["Kairos (timing)","Logos (logic)","Pathos (emotion)","Ethos (credibility)"],3],
-          ["A charity ad showing images of hungry children while asking for donations is primarily using:",["Logos (logic)","Pathos (emotion)","Antithesis","Ethos (credibility)"],1],
-          ["A politician saying “As a lifelong teacher, I understand our schools' needs” is establishing:",["Pathos (emotion)","A counterargument","Ethos (credibility)","Logos (logic)"],2],
-          ["An argument that says “Crime went up after the park closed, so the park must have been preventing crime” makes an assumption. This kind of reasoning gap is called:",["An appeal to authority","A rhetorical question","A metaphor","A logical fallacy (assuming correlation means causation)"],3]
+          ["A toothpaste ad says “9 out of 10 dentists recommend this brand,” leaning on the credibility of dentists as experts. This is mainly an appeal to:",["Pathos (emotion)","Logos (logic)","Kairos (timing)","Ethos (credibility)"],3],
+          ["A charity ad showing images of hungry children while asking for donations is primarily using:",["Logos (logic)","Antithesis","Ethos (credibility)","Pathos (emotion)"],3],
+          ["A politician saying “As a lifelong teacher, I understand our schools' needs” is establishing:",["Logos (logic)","A counterargument","Pathos (emotion)","Ethos (credibility)"],3],
+          ["An argument that says “Crime went up after the park closed, so the park must have been preventing crime” makes an assumption. This kind of reasoning gap is called:",["An appeal to authority","A metaphor","A logical fallacy (assuming correlation means causation)","A rhetorical question"],2]
         ],
         a:[
-          ["A speaker who cites peer-reviewed studies and statistics to support a claim is relying mainly on:",["Ethos","Hyperbole","Pathos","Logos"],3],
-          ["“Only a coward would disagree with this plan” is an example of which flawed rhetorical technique?",["A well-supported logical argument","A neutral statement of fact","An attack meant to pressure agreement, rather than an actual argument","An appeal to a credible expert"],2],
-          ["A strong counterargument in a persuasive essay should:",["Ignore the opposing view completely","Insult people who disagree","Acknowledge the opposing view fairly, then respond to it with evidence","Repeat the original claim louder"],2],
-          ["An author who begins an essay with a personal story about their grandmother's illness before arguing for healthcare reform is primarily opening with:",["An appeal to pathos to engage the reader emotionally","A citation of expert testimony (ethos)","A statistical appeal to logos","An admission that the argument is weak"],0],
-          ["Which is the strongest evidence for the claim “This new medicine is effective”?",["Results from a large, peer-reviewed clinical trial","One person's anecdote","A company's own advertisement","A celebrity's personal opinion"],0],
-          ["Identifying that an author only presents evidence that supports their side while ignoring contrary evidence is recognizing:",["A strong, balanced argument","An appeal to pathos","A rhetorical question","Bias in the argument"],3]
+          ["A speaker who cites peer-reviewed studies and statistics to support a claim is relying mainly on:",["Hyperbole","Pathos","Ethos","Logos"],3],
+          ["“Only a coward would disagree with this plan” is an example of which flawed rhetorical technique?",["A neutral statement of fact","A well-supported logical argument","An attack meant to pressure agreement, rather than an actual argument","An appeal to a credible expert"],2],
+          ["A strong counterargument in a persuasive essay should:",["Repeat the original claim louder","Ignore the opposing view completely","Insult people who disagree","Acknowledge the opposing view fairly, then respond to it with evidence"],3],
+          ["An author who begins an essay with a personal story about their grandmother's illness before arguing for healthcare reform is primarily opening with:",["A statistical appeal to logos","An admission that the argument is weak","A citation of expert testimony (ethos)","An appeal to pathos to engage the reader emotionally"],3],
+          ["Which is the strongest evidence for the claim “This new medicine is effective”?",["One person's anecdote","A celebrity's personal opinion","A company's own advertisement","Results from a large, peer-reviewed clinical trial"],3],
+          ["Identifying that an author only presents evidence that supports their side while ignoring contrary evidence is recognizing:",["An appeal to pathos","A strong, balanced argument","Bias in the argument","A rhetorical question"],2]
         ]},
       { t:"Literary Elements: Plot, Conflict & Characterization", o:"Analyze how plot structure, conflict (internal/external), and characterization develop a story's meaning.",
         passageP:"Jae had rehearsed the apology a hundred times, but standing at his best friend's door, every word evaporated. He'd missed her big game to finish a project he didn't even need to finish that night — he'd just been afraid to face the crowd. Now he wasn't sure if he was more afraid of her anger or of admitting why he'd really stayed home. He knocked anyway.",
         p:[
-          ["What type of conflict does Jae primarily face in this passage?",["External conflict with another person","A conflict with nature","Internal conflict — his own fear and self-doubt","A conflict with technology"],2],
-          ["What can you infer motivated Jae to skip his friend's game?",["He doesn't value the friendship","He genuinely had to finish urgent work","Anxiety about being around a crowd, not the project itself","He forgot about the game entirely"],2],
-          ["The detail that Jae “knocked anyway” despite his fear suggests he is:",["Completely fearless","Angry at his friend","Giving up on the friendship","Growing more courageous, even if reluctantly"],3],
+          ["What type of conflict does Jae primarily face in this passage?",["A conflict with nature","External conflict with another person","A conflict with technology","Internal conflict — his own fear and self-doubt"],3],
+          ["What can you infer motivated Jae to skip his friend's game?",["He genuinely had to finish urgent work","He forgot about the game entirely","He doesn't value the friendship","Anxiety about being around a crowd, not the project itself"],3],
+          ["The detail that Jae “knocked anyway” despite his fear suggests he is:",["Angry at his friend","Giving up on the friendship","Growing more courageous, even if reluctantly","Completely fearless"],2],
           ["This passage is told from which point of view?",["Third person, limited to Jae's thoughts","First person","Third person omniscient, knowing everyone's thoughts","Second person"],0]
         ],
         a:[
-          ["In most stories, the central conflict is introduced during which part of the plot structure?",["It's never clearly introduced","The resolution","The rising action, following the exposition","The falling action only"],2],
-          ["A character who changes significantly over the course of a story due to events and choices is called a:",["Static character","Narrator","Foil","Dynamic character"],3],
-          ["A secondary character whose traits contrast with and highlight the traits of the main character is called a:",["Antihero","Narrator","Protagonist","Foil"],3],
-          ["External conflict can take the form of a character vs. another character, vs. nature, vs. society, or vs.:",["Nothing else is possible","Only other characters","Only the weather","Technology or fate"],3],
-          ["The turning point of a story, where the outcome becomes clear, is called the:",["Exposition","Denouement","Climax","Foreshadowing"],2],
-          ["Analyzing characterization means looking at what an author reveals through a character's:",["Actions, dialogue, thoughts, and how others react to them","The book's cover art","Only their physical appearance","Only the narrator's direct statements"],0]
+          ["In most stories, the central conflict is introduced during which part of the plot structure?",["The rising action, following the exposition","It's never clearly introduced","The falling action only","The resolution"],0],
+          ["A character who changes significantly over the course of a story due to events and choices is called a:",["Dynamic character","Foil","Narrator","Static character"],0],
+          ["A secondary character whose traits contrast with and highlight the traits of the main character is called a:",["Narrator","Antihero","Foil","Protagonist"],2],
+          ["External conflict can take the form of a character vs. another character, vs. nature, vs. society, or vs.:",["Technology or fate","Nothing else is possible","Only other characters","Only the weather"],0],
+          ["The turning point of a story, where the outcome becomes clear, is called the:",["Denouement","Foreshadowing","Climax","Exposition"],2],
+          ["Analyzing characterization means looking at what an author reveals through a character's:",["Only their physical appearance","Actions, dialogue, thoughts, and how others react to them","Only the narrator's direct statements","The book's cover art"],1]
         ]},
       { t:"Comparing Perspectives & Synthesizing Texts", o:"Compare how two texts approach a related topic differently, and synthesize information across sources.",
         passageP:"Text A: A city council member argues that a proposed bike-lane network will reduce traffic congestion and improve public health by encouraging more residents to bike instead of drive.\n\nText B: A local business owner argues that removing car lanes for bike lanes will hurt nearby stores by making deliveries harder and reducing customer parking.",
         p:[
-          ["What is the main point of disagreement between Text A and Text B?",["Whether the city has a council","Whether traffic congestion is a real problem","Whether bikes exist","Whether the bike lanes' benefits outweigh their costs to local business"],3],
-          ["Which piece of evidence would most directly support Text A's position?",["A survey of how many bikes a resident owns","A study showing bike lanes reduced car traffic and improved air quality in another city","A description of bike lane paint colors","An interview about parking prices"],1],
-          ["Which piece of evidence would most directly support Text B's position?",["A study on bike lanes reducing car traffic","A poll about favorite bike colors","Sales data showing nearby stores lost revenue after a similar bike lane project elsewhere","An article about health benefits of exercise"],2],
-          ["A reader trying to form a balanced view of this issue should:",["Only trust the council member because they're an elected official","Ignore both perspectives","Weigh both the public-health and economic evidence before concluding","Only trust the business owner because they're local"],2]
+          ["What is the main point of disagreement between Text A and Text B?",["Whether the bike lanes' benefits outweigh their costs to local business","Whether the city has a council","Whether traffic congestion is a real problem","Whether bikes exist"],0],
+          ["Which piece of evidence would most directly support Text A's position?",["A description of bike lane paint colors","A survey of how many bikes a resident owns","An interview about parking prices","A study showing bike lanes reduced car traffic and improved air quality in another city"],3],
+          ["Which piece of evidence would most directly support Text B's position?",["A study on bike lanes reducing car traffic","Sales data showing nearby stores lost revenue after a similar bike lane project elsewhere","A poll about favorite bike colors","An article about health benefits of exercise"],1],
+          ["A reader trying to form a balanced view of this issue should:",["Only trust the council member because they're an elected official","Only trust the business owner because they're local","Weigh both the public-health and economic evidence before concluding","Ignore both perspectives"],2]
         ],
         a:[
-          ["When two texts disagree about a topic, a careful reader should first identify:",["Which author is more famous","Which text is longer","Each author's specific claim and the evidence behind it","Which text was published first, regardless of content"],2],
-          ["Synthesizing information from multiple sources means:",["Combining and comparing ideas across texts to form a fuller understanding","Only using the first source you read","Picking the source you agree with and ignoring the rest","Summarizing just one text alone"],0],
-          ["If Text A cites a scientific study and Text B cites only personal opinion, a critical reader should:",["Automatically believe Text B because it's more relatable","Weigh Text A's evidence as generally stronger, while still considering Text B's real concerns","Ignore Text A because studies can be wrong","Treat both as equally strong evidence regardless of source"],1],
-          ["Two texts about the same event written from different perspectives will most likely differ in:",["Which details they emphasize and how they interpret them","The actual facts of what happened, since facts always change","Nothing at all","The language they were originally written in"],0],
-          ["A conflict of interest exists when:",["A source has a personal stake in the outcome that could bias their argument","Two texts happen to agree","A source cites too many statistics","A source is simply well-written"],0],
-          ["The best way to evaluate which perspective is more credible on a complex issue is to:",["Just pick the shorter argument","Check the quality and source of each side's evidence","Just pick the argument you read first","Assume both sides are lying"],1]
+          ["When two texts disagree about a topic, a careful reader should first identify:",["Which text is longer","Which author is more famous","Each author's specific claim and the evidence behind it","Which text was published first, regardless of content"],2],
+          ["Synthesizing information from multiple sources means:",["Picking the source you agree with and ignoring the rest","Combining and comparing ideas across texts to form a fuller understanding","Summarizing just one text alone","Only using the first source you read"],1],
+          ["If Text A cites a scientific study and Text B cites only personal opinion, a critical reader should:",["Automatically believe Text B because it's more relatable","Ignore Text A because studies can be wrong","Weigh Text A's evidence as generally stronger, while still considering Text B's real concerns","Treat both as equally strong evidence regardless of source"],2],
+          ["Two texts about the same event written from different perspectives will most likely differ in:",["Which details they emphasize and how they interpret them","The language they were originally written in","Nothing at all","The actual facts of what happened, since facts always change"],0],
+          ["A conflict of interest exists when:",["A source cites too many statistics","A source has a personal stake in the outcome that could bias their argument","Two texts happen to agree","A source is simply well-written"],1],
+          ["The best way to evaluate which perspective is more credible on a complex issue is to:",["Assume both sides are lying","Check the quality and source of each side's evidence","Just pick the argument you read first","Just pick the shorter argument"],1]
         ]}
     ]},
     writing: { name:"Writing", topics: [
       { t:"Thesis Statements & Argumentative Structure", o:"Write a clear, arguable thesis statement and organize an argumentative essay around it.",
         p:[
-          ["Which is the strongest thesis statement for an essay about school start times?",["Start times exist in every school","I think schools are interesting","Some schools start early and some start late","Schools should push start times later because it improves teen health and academic performance"],3],
-          ["A strong thesis statement should be:",["A question","Specific and arguable, not just a fact everyone agrees on","A simple summary with no claim","As vague as possible"],1],
-          ["Which of these is NOT arguable, and therefore a weak thesis?",["Water is made of hydrogen and oxygen","Homework should be limited on weeknights","The city should invest more in public transit","Video games should be included in school curricula"],0],
-          ["In an argumentative essay, the body paragraphs should each:",["Support the thesis with one main point and evidence","Introduce an unrelated new topic","Contain no evidence at all","Just restate the thesis word for word"],0]
+          ["Which is the strongest thesis statement for an essay about school start times?",["Schools should push start times later because it improves teen health and academic performance","I think schools are interesting","Some schools start early and some start late","Start times exist in every school"],0],
+          ["A strong thesis statement should be:",["As vague as possible","A simple summary with no claim","Specific and arguable, not just a fact everyone agrees on","A question"],2],
+          ["Which of these is NOT arguable, and therefore a weak thesis?",["Homework should be limited on weeknights","Video games should be included in school curricula","Water is made of hydrogen and oxygen","The city should invest more in public transit"],2],
+          ["In an argumentative essay, the body paragraphs should each:",["Just restate the thesis word for word","Introduce an unrelated new topic","Support the thesis with one main point and evidence","Contain no evidence at all"],2]
         ],
         a:[
-          ["Which thesis statement is most specific and arguable?",["Community service should be required for high school graduation because it builds civic responsibility","Schools have many requirements","Community service is something people do","Graduation happens every year"],0],
-          ["The best place for a thesis statement in a traditional argumentative essay is usually:",["The very first sentence, before any context","The middle of the conclusion","The end of the introduction","Nowhere — essays don't need one"],2],
-          ["A counterargument paragraph in an argumentative essay should:",["Present the opposing view fairly, then refute it with evidence","Agree with the opposing view and abandon your thesis","Be left out entirely","Simply insult the opposing view"],0],
-          ["Which revision makes this thesis stronger? Original: “Recycling is good.”",["Cities should expand curbside recycling programs because they reduce landfill waste and cut costs long-term","Recycling is something everyone should think about","Some people recycle","Recycling involves bins"],0],
-          ["An essay's conclusion should primarily:",["Apologize for the essay's weaknesses","Reinforce the thesis and its significance without simply repeating it word-for-word","Introduce a brand new argument","Ask the reader an unrelated question"],1],
-          ["A well-organized argumentative essay follows which general structure?",["Conclusion first, then introduction","Only one long paragraph","Introduction with thesis, body paragraphs with evidence, counterargument, conclusion","Random order of ideas"],2]
+          ["Which thesis statement is most specific and arguable?",["Community service should be required for high school graduation because it builds civic responsibility","Graduation happens every year","Community service is something people do","Schools have many requirements"],0],
+          ["The best place for a thesis statement in a traditional argumentative essay is usually:",["The end of the introduction","The middle of the conclusion","Nowhere — essays don't need one","The very first sentence, before any context"],0],
+          ["A counterargument paragraph in an argumentative essay should:",["Be left out entirely","Present the opposing view fairly, then refute it with evidence","Simply insult the opposing view","Agree with the opposing view and abandon your thesis"],1],
+          ["Which revision makes this thesis stronger? Original: “Recycling is good.”",["Recycling is something everyone should think about","Cities should expand curbside recycling programs because they reduce landfill waste and cut costs long-term","Some people recycle","Recycling involves bins"],1],
+          ["An essay's conclusion should primarily:",["Apologize for the essay's weaknesses","Ask the reader an unrelated question","Introduce a brand new argument","Reinforce the thesis and its significance without simply repeating it word-for-word"],3],
+          ["A well-organized argumentative essay follows which general structure?",["Random order of ideas","Introduction with thesis, body paragraphs with evidence, counterargument, conclusion","Conclusion first, then introduction","Only one long paragraph"],1]
         ]},
       { t:"Using Evidence & Counterarguments", o:"Support claims with relevant, credible evidence and address counterarguments effectively.",
         p:[
-          ["Which is the strongest evidence to support the claim “Regular exercise improves focus in school”?",["A guess based on nothing","A friend's personal opinion","An advertisement for a gym","A study showing students who exercised daily scored higher on attention tests"],3],
+          ["Which is the strongest evidence to support the claim “Regular exercise improves focus in school”?",["A study showing students who exercised daily scored higher on attention tests","A guess based on nothing","A friend's personal opinion","An advertisement for a gym"],0],
           ["Effectively addressing a counterargument means:",["Fairly stating the opposing view, then explaining why your position still holds","Agreeing with it and giving up your claim","Mocking people who disagree","Pretending the counterargument doesn't exist"],0],
-          ["“Everyone knows homework is pointless” is a weak piece of evidence because it:",["Cites a specific statistic","Is an unsupported generalization, not actual evidence","Comes from an expert","Is a peer-reviewed study"],1],
-          ["Which source would generally be considered most credible for a research paper?",["A peer-reviewed academic journal article","A meme","A random social media post","An anonymous blog with no sources"],0]
+          ["“Everyone knows homework is pointless” is a weak piece of evidence because it:",["Is an unsupported generalization, not actual evidence","Cites a specific statistic","Comes from an expert","Is a peer-reviewed study"],0],
+          ["Which source would generally be considered most credible for a research paper?",["A peer-reviewed academic journal article","A meme","An anonymous blog with no sources","A random social media post"],0]
         ],
         a:[
-          ["When quoting evidence in an essay, you should always:",["Just paste the quote with no explanation","Avoid citing where it came from","Explain how the evidence connects back to your claim","Only use quotes, never paraphrase"],2],
-          ["A well-handled counterargument section typically uses a transition like:",["“I don't care what others think.”","“This is definitely true no matter what.”","“The end.”","“Some may argue that... however...”"],3],
-          ["If your only evidence for a claim is a single anecdote, your argument is:",["Weaker, since one example doesn't prove a general trend","Impossible to improve","Perfectly sufficient","Stronger than statistical evidence"],0],
-          ["Which is an example of a credible, specific piece of evidence (versus a vague claim)?",["“Teens don't sleep enough these days”","“Everyone is tired all the time”","“According to a 2024 CDC report, teen sleep deprivation rose 12% over five years”","“Sleep is important, probably”"],2],
-          ["Refuting a counterargument effectively means showing that it is:",["Too short to matter","Held by unpopular people","Incomplete, outweighed by other evidence, or based on a flawed assumption","Automatically evil"],2],
-          ["A writer who cherry-picks only the evidence that supports their view while ignoring strong contrary evidence is committing what kind of error?",["A bias / one-sidedness in reasoning","A citation format error","A grammar error","A spelling error"],0]
+          ["When quoting evidence in an essay, you should always:",["Only use quotes, never paraphrase","Just paste the quote with no explanation","Explain how the evidence connects back to your claim","Avoid citing where it came from"],2],
+          ["A well-handled counterargument section typically uses a transition like:",["“I don't care what others think.”","“The end.”","“This is definitely true no matter what.”","“Some may argue that... however...”"],3],
+          ["If your only evidence for a claim is a single anecdote, your argument is:",["Stronger than statistical evidence","Impossible to improve","Weaker, since one example doesn't prove a general trend","Perfectly sufficient"],2],
+          ["Which is an example of a credible, specific piece of evidence (versus a vague claim)?",["“Teens don't sleep enough these days”","“Sleep is important, probably”","“According to a 2024 CDC report, teen sleep deprivation rose 12% over five years”","“Everyone is tired all the time”"],2],
+          ["Refuting a counterargument effectively means showing that it is:",["Held by unpopular people","Too short to matter","Incomplete, outweighed by other evidence, or based on a flawed assumption","Automatically evil"],2],
+          ["A writer who cherry-picks only the evidence that supports their view while ignoring strong contrary evidence is committing what kind of error?",["A bias / one-sidedness in reasoning","A spelling error","A grammar error","A citation format error"],0]
         ]},
       { t:"Citing Sources & Avoiding Plagiarism", o:"Understand when and how to cite sources (basic MLA in-text citation) and recognize plagiarism.",
         p:[
-          ["Plagiarism means:",["Writing your own original ideas","Using someone else's words or ideas without giving them credit","Quoting a source with proper citation","Summarizing a text in your own words with credit"],1],
-          ["A basic MLA in-text citation for a paraphrased idea from page 45 of a book by Smith looks like:",["Smith, page 45, said that...","[Smith]","No citation needed if paraphrased","(Smith 45)"],3],
-          ["If you copy a sentence from a website word-for-word without quotation marks or citation, this is:",["Only a problem if the sentence is long","Only a problem in published books","Perfectly fine since it's the internet","Plagiarism, even if you didn't mean to do it"],3],
-          ["Paraphrasing a source correctly means:",["Changing just one or two words from the original","Never needing to cite it again","Copying it exactly but citing it","Restating the idea in your own words and still citing the source"],3]
+          ["Plagiarism means:",["Quoting a source with proper citation","Using someone else's words or ideas without giving them credit","Writing your own original ideas","Summarizing a text in your own words with credit"],1],
+          ["A basic MLA in-text citation for a paraphrased idea from page 45 of a book by Smith looks like:",["(Smith 45)","[Smith]","Smith, page 45, said that...","No citation needed if paraphrased"],0],
+          ["If you copy a sentence from a website word-for-word without quotation marks or citation, this is:",["Perfectly fine since it's the internet","Only a problem if the sentence is long","Plagiarism, even if you didn't mean to do it","Only a problem in published books"],2],
+          ["Paraphrasing a source correctly means:",["Restating the idea in your own words and still citing the source","Never needing to cite it again","Changing just one or two words from the original","Copying it exactly but citing it"],0]
         ],
         a:[
-          ["Which situation does NOT require a citation?",["Stating a widely known fact, like water boiling at 100°C at sea level","Using a statistic from a report","Quoting a specific sentence from an article","Paraphrasing a specific claim from a study"],0],
-          ["A Works Cited (or bibliography) page at the end of an essay lists:",["Full source information for everything cited in the essay","A summary of the whole essay","Only the sources you personally liked","Nothing — it's optional decoration"],0],
-          ["Self-plagiarism refers to:",["Using proper citations throughout","Writing two different essays on the same topic","Reusing your own previous work as if it were new, without disclosure, when that's not allowed","Citing your own earlier essay properly"],2],
-          ["If you're unsure whether something needs a citation, the safest approach is to:",["Ask a friend to guess","Never cite anything","Cite it — when in doubt, give credit","Only cite it if it's over one page long"],2],
-          ["Which best describes an appropriate use of quotation marks in an essay?",["Around your own original sentences","Around every noun in the essay","Never — quotation marks are outdated","Around a source's exact wording that you're using directly"],3],
-          ["A student who submits an AI-generated essay as entirely their own original work without disclosure is committing:",["Good time management","A form of academic dishonesty similar to plagiarism","Proper citation practice","A completely acceptable research method"],1]
+          ["Which situation does NOT require a citation?",["Stating a widely known fact, like water boiling at 100°C at sea level","Quoting a specific sentence from an article","Using a statistic from a report","Paraphrasing a specific claim from a study"],0],
+          ["A Works Cited (or bibliography) page at the end of an essay lists:",["Full source information for everything cited in the essay","Only the sources you personally liked","Nothing — it's optional decoration","A summary of the whole essay"],0],
+          ["Self-plagiarism refers to:",["Reusing your own previous work as if it were new, without disclosure, when that's not allowed","Writing two different essays on the same topic","Using proper citations throughout","Citing your own earlier essay properly"],0],
+          ["If you're unsure whether something needs a citation, the safest approach is to:",["Ask a friend to guess","Cite it — when in doubt, give credit","Only cite it if it's over one page long","Never cite anything"],1],
+          ["Which best describes an appropriate use of quotation marks in an essay?",["Around your own original sentences","Never — quotation marks are outdated","Around every noun in the essay","Around a source's exact wording that you're using directly"],3],
+          ["A student who submits an AI-generated essay as entirely their own original work without disclosure is committing:",["Proper citation practice","Good time management","A form of academic dishonesty similar to plagiarism","A completely acceptable research method"],2]
         ]},
       { t:"Revising for Style", o:"Revise writing for active voice, conciseness, and varied sentence structure.",
         p:[
-          ["Which sentence uses active voice?",["Approval was given to the proposal.","The proposal was approved by the committee.","The proposal had been approved.","The committee approved the proposal."],3],
-          ["Which revision is more concise? Original: “Due to the fact that it was raining, we canceled the game.”",["Because it was raining, we canceled the game.","It was, due to the fact of rain, that the game got canceled by us.","Owing to the fact that rain was occurring, the game was canceled by us.","Due to the fact that, because it was raining, we then canceled the game."],0],
+          ["Which sentence uses active voice?",["The committee approved the proposal.","The proposal had been approved.","Approval was given to the proposal.","The proposal was approved by the committee."],0],
+          ["Which revision is more concise? Original: “Due to the fact that it was raining, we canceled the game.”",["Due to the fact that, because it was raining, we then canceled the game.","Because it was raining, we canceled the game.","It was, due to the fact of rain, that the game got canceled by us.","Owing to the fact that rain was occurring, the game was canceled by us."],1],
           ["Which sentence eliminates unnecessary wordiness?",["She quickly finished the report.","She, in a very fast and quick manner, finished the report in a hurry.","She finished the report in a fast way, quickly.","In a short amount of time, she finished the report quickly."],0],
-          ["Passive voice is generally best avoided in essays because it:",["Cannot be used correctly","Often hides who is responsible for an action and can sound wordy","Is more concise than active voice","Is always grammatically incorrect"],1]
+          ["Passive voice is generally best avoided in essays because it:",["Cannot be used correctly","Is more concise than active voice","Often hides who is responsible for an action and can sound wordy","Is always grammatically incorrect"],2]
         ],
         a:[
-          ["Rewrite in active voice: “The trophy was won by our team.”",["Winning the trophy was done by our team.","Our team won the trophy.","Our team, the trophy winning of, occurred.","The trophy, by our team, was won."],1],
-          ["Which sentence shows the most varied, sophisticated structure?",["She was exhausted and she finished the marathon and she was proud.","Exhausted, marathon, finished, she.","Although she was exhausted, she finished the marathon.","She was exhausted. She finished the marathon."],2],
-          ["Which sentence is wordiest and needs revision?",["We should decide now.","It's time to decide.","At this point in time, it is important to note that we should consider making a decision.","Let's decide."],2],
-          ["Combining several short, choppy sentences into one well-structured sentence mainly improves:",["Nothing — short sentences are always better","Grammar rules that don't actually apply","Word count only, with no other benefit","Flow and sophistication of the writing"],3],
-          ["Which sentence uses passive voice unnecessarily?",["The team fixed its mistakes.","Mistakes were made by the team during the project.","The team learned from its mistakes.","The team made mistakes during the project."],1],
-          ["A strong final revision pass on an essay should check for:",["Whether every sentence starts with “The”","Only whether the essay is long enough","Wordiness, passive voice overuse, and repetitive sentence structure","Only spelling, nothing else"],2]
+          ["Rewrite in active voice: “The trophy was won by our team.”",["Our team, the trophy winning of, occurred.","Our team won the trophy.","Winning the trophy was done by our team.","The trophy, by our team, was won."],1],
+          ["Which sentence shows the most varied, sophisticated structure?",["Although she was exhausted, she finished the marathon.","Exhausted, marathon, finished, she.","She was exhausted and she finished the marathon and she was proud.","She was exhausted. She finished the marathon."],0],
+          ["Which sentence is wordiest and needs revision?",["It's time to decide.","We should decide now.","Let's decide.","At this point in time, it is important to note that we should consider making a decision."],3],
+          ["Combining several short, choppy sentences into one well-structured sentence mainly improves:",["Nothing — short sentences are always better","Grammar rules that don't actually apply","Flow and sophistication of the writing","Word count only, with no other benefit"],2],
+          ["Which sentence uses passive voice unnecessarily?",["The team fixed its mistakes.","The team learned from its mistakes.","The team made mistakes during the project.","Mistakes were made by the team during the project."],3],
+          ["A strong final revision pass on an essay should check for:",["Only spelling, nothing else","Wordiness, passive voice overuse, and repetitive sentence structure","Only whether the essay is long enough","Whether every sentence starts with “The”"],1]
         ]}
     ]}
   }},
@@ -402,277 +582,277 @@ const CURRICULUM = {
     geometry: { name:"Geometry", topics: [
       { t:"Angle Relationships & Parallel Lines", o:"Identify complementary, supplementary, and vertical angles, and the angle pairs formed when a transversal crosses parallel lines.",
         p:[
-          ["Two angles are complementary. If one angle is 35°, what is the other?",["55°","145°","325°","65°"],0],
-          ["Two angles are supplementary. If one angle is 112°, what is the other?",["78°","22°","68°","248°"],2],
-          ["Vertical angles are always:",["Complementary","Supplementary only","Never equal","Congruent (equal)"],3],
-          ["When a transversal crosses two parallel lines, corresponding angles are:",["Congruent","Supplementary","Complementary","Always 90°"],0]
+          ["Two angles are complementary. If one angle is 35°, what is the other?",["325°","145°","55°","65°"],2],
+          ["Two angles are supplementary. If one angle is 112°, what is the other?",["68°","22°","78°","248°"],0],
+          ["Vertical angles are always:",["Never equal","Supplementary only","Congruent (equal)","Complementary"],2],
+          ["When a transversal crosses two parallel lines, corresponding angles are:",["Supplementary","Always 90°","Congruent","Complementary"],2]
         ],
         a:[
-          ["Two parallel lines are cut by a transversal. If one interior angle is 70°, its alternate interior angle measures:",["20°","180°","70°","110°"],2],
-          ["Two parallel lines are cut by a transversal. If one angle is 65°, its co-interior (same-side interior) angle measures:",["65°","155°","115°","25°"],2],
-          ["An angle measures 3x° and its complement measures 2x°. What is x?",["18","36","54","30"],0],
-          ["An angle measures (2x+10)° and its supplement measures (3x)°. What is x?",["20","56","34","17"],2],
-          ["Two angles are vertical angles. One measures (4x-10)° and the other measures (2x+30)°. What is x?",["40","5","10","20"],3],
-          ["In a figure where two parallel lines are cut by a transversal, which pair of angles is NOT necessarily congruent?",["Alternate interior angles","Corresponding angles","Co-interior (same-side interior) angles — they are supplementary, not congruent","Alternate exterior angles"],2]
+          ["Two parallel lines are cut by a transversal. If one interior angle is 70°, its alternate interior angle measures:",["110°","180°","20°","70°"],3],
+          ["Two parallel lines are cut by a transversal. If one angle is 65°, its co-interior (same-side interior) angle measures:",["25°","115°","155°","65°"],1],
+          ["An angle measures 3x° and its complement measures 2x°. What is x?",["36","30","54","18"],3],
+          ["An angle measures (2x+10)° and its supplement measures (3x)°. What is x?",["20","17","34","56"],2],
+          ["Two angles are vertical angles. One measures (4x-10)° and the other measures (2x+30)°. What is x?",["10","5","40","20"],3],
+          ["In a figure where two parallel lines are cut by a transversal, which pair of angles is NOT necessarily congruent?",["Alternate exterior angles","Alternate interior angles","Co-interior (same-side interior) angles — they are supplementary, not congruent","Corresponding angles"],2]
         ]},
       { t:"Triangle Congruence & Similarity", o:"Use SSS, SAS, ASA congruence criteria and similarity ratios (AA similarity) to solve for missing side lengths and angles.",
         p:[
-          ["Which set of criteria proves two triangles congruent if all three corresponding sides are equal?",["AA","SSA","SSS","AAA"],2],
-          ["If two triangles have two pairs of congruent angles, they are similar by which criterion?",["ASA","AA Similarity","SSS","SAS"],1],
+          ["Which set of criteria proves two triangles congruent if all three corresponding sides are equal?",["AAA","AA","SSS","SSA"],2],
+          ["If two triangles have two pairs of congruent angles, they are similar by which criterion?",["SSS","SAS","ASA","AA Similarity"],3],
           ["Triangle ABC is similar to triangle DEF with a scale factor of 2 (DEF is twice ABC). If AB = 5, what is DE?",["25","7","10","2.5"],2],
-          ["In similar triangles, corresponding angles are always:",["Congruent","Complementary","Supplementary","Different"],0]
+          ["In similar triangles, corresponding angles are always:",["Congruent","Supplementary","Complementary","Different"],0]
         ],
         a:[
-          ["Triangle PQR ~ Triangle XYZ, and XYZ is 3 times as large as PQR. If side XY = 12, what is side PQ?",["9","4","15","36"],1],
-          ["Two triangles have sides of 6, 8, 10 and 9, 12, 15. Are they similar, and if so what is the scale factor?",["Yes, similar with scale factor 1.5","Yes, but scale factor 1","Yes, but scale factor 2","No, they are not similar"],0],
-          ["Which congruence criterion uses two sides and the included angle between them?",["ASA","SSS","AA","SAS"],3],
-          ["A triangle has sides 5, 12, 13. A similar, larger triangle has a shortest side of 15. What is the length of the side corresponding to 13?",["30","39","36","45"],1],
-          ["Two triangles share one pair of congruent angles and have two pairs of proportional sides adjacent to that angle. What criterion proves similarity here?",["ASA Congruence","SSS Congruence","SAS Similarity","AAA (not a valid criterion)"],2],
-          ["If two polygons are similar, their corresponding side lengths are:",["Always equal","Proportional (same ratio)","Always double","Unrelated"],1]
+          ["Triangle PQR ~ Triangle XYZ, and XYZ is 3 times as large as PQR. If side XY = 12, what is side PQ?",["15","4","9","36"],1],
+          ["Two triangles have sides of 6, 8, 10 and 9, 12, 15. Are they similar, and if so what is the scale factor?",["Yes, but scale factor 1","Yes, similar with scale factor 1.5","Yes, but scale factor 2","No, they are not similar"],1],
+          ["Which congruence criterion uses two sides and the included angle between them?",["SSS","SAS","ASA","AA"],1],
+          ["A triangle has sides 5, 12, 13. A similar, larger triangle has a shortest side of 15. What is the length of the side corresponding to 13?",["30","36","45","39"],3],
+          ["Two triangles share one pair of congruent angles and have two pairs of proportional sides adjacent to that angle. What criterion proves similarity here?",["AAA (not a valid criterion)","SAS Similarity","SSS Congruence","ASA Congruence"],1],
+          ["If two polygons are similar, their corresponding side lengths are:",["Unrelated","Always double","Proportional (same ratio)","Always equal"],2]
         ]},
       { t:"Pythagorean Theorem & Right Triangle Applications", o:"Apply the Pythagorean theorem to find missing side lengths, determine if a triangle is right, and compute the distance between two points.",
         p:[
-          ["A right triangle has legs of 6 and 8. What is the length of the hypotenuse?",["100","10","14","48"],1],
-          ["A right triangle has a hypotenuse of 13 and one leg of 5. What is the other leg?",["8","12","18","144"],1],
-          ["A triangle has sides 7, 24, 25. Is it a right triangle?",["No, since the sides don't fit any rule","Yes, since 7²+24²=25²","Yes, but only if it's equilateral","No, right triangles must have equal legs"],1],
-          ["What is the distance between points (0,0) and (3,4)?",["7","5","12","25"],1]
+          ["A right triangle has legs of 6 and 8. What is the length of the hypotenuse?",["14","10","100","48"],1],
+          ["A right triangle has a hypotenuse of 13 and one leg of 5. What is the other leg?",["144","8","12","18"],2],
+          ["A triangle has sides 7, 24, 25. Is it a right triangle?",["Yes, but only if it's equilateral","Yes, since 7²+24²=25²","No, since the sides don't fit any rule","No, right triangles must have equal legs"],1],
+          ["What is the distance between points (0,0) and (3,4)?",["5","25","12","7"],0]
         ],
         a:[
-          ["A right triangle has legs of 9 and 12. What is the hypotenuse?",["108","21","144","15"],3],
-          ["A ladder 10 feet long leans against a wall, its base 6 feet from the wall. How high up the wall does the ladder reach?",["16 feet","60 feet","4 feet","8 feet"],3],
-          ["What is the distance between points (1,2) and (4,6)?",["25","5","4","7"],1],
-          ["A triangle has sides 8, 15, 17. Is this a right triangle?",["No, since 8+15≠17","Yes, but only if it's isosceles","Yes, since 8²+15²=17²","No, the numbers are too different"],2],
-          ["A rectangular park is 30 m wide and 40 m long. What is the length of a diagonal path across it?",["35 m","1200 m","70 m","50 m"],3],
-          ["What is the distance between points (-2,1) and (3,-1)?",["5","√21 (≈4.6)","7","√29 (≈5.4)"],3]
+          ["A right triangle has legs of 9 and 12. What is the hypotenuse?",["144","21","108","15"],3],
+          ["A ladder 10 feet long leans against a wall, its base 6 feet from the wall. How high up the wall does the ladder reach?",["8 feet","4 feet","16 feet","60 feet"],0],
+          ["What is the distance between points (1,2) and (4,6)?",["5","25","7","4"],0],
+          ["A triangle has sides 8, 15, 17. Is this a right triangle?",["No, the numbers are too different","No, since 8+15≠17","Yes, but only if it's isosceles","Yes, since 8²+15²=17²"],3],
+          ["A rectangular park is 30 m wide and 40 m long. What is the length of a diagonal path across it?",["50 m","70 m","1200 m","35 m"],0],
+          ["What is the distance between points (-2,1) and (3,-1)?",["5","7","√29 (≈5.4)","√21 (≈4.6)"],2]
         ]},
       { t:"Circles: Circumference, Area, Arc Length & Sector Area", o:"Calculate the circumference and area of a circle, and the arc length and area of a sector given a central angle.",
         p:[
           ["What is the circumference of a circle with radius 7? (Use π ≈ 3.14)",["21.98","49","153.86","43.96"],3],
-          ["What is the area of a circle with radius 5? (Use π ≈ 3.14)",["25","15.7","78.5","31.4"],2],
-          ["What is the diameter of a circle with circumference 62.8? (Use π ≈ 3.14)",["10","125.6","20","31.4"],2],
-          ["A circle has radius 4. What is its area in terms of π?",["16π","32π","8π","4π"],0]
+          ["What is the area of a circle with radius 5? (Use π ≈ 3.14)",["15.7","78.5","25","31.4"],1],
+          ["What is the diameter of a circle with circumference 62.8? (Use π ≈ 3.14)",["125.6","31.4","20","10"],2],
+          ["A circle has radius 4. What is its area in terms of π?",["32π","4π","8π","16π"],3]
         ],
         a:[
-          ["A circle has radius 9. What is its circumference in terms of π?",["36π","81π","9π","18π"],3],
-          ["A sector has a central angle of 90° in a circle with radius 8. What is the arc length? (Use π ≈ 3.14)",["25.12","50.24","6.28","12.56"],3],
-          ["A sector has a central angle of 60° in a circle with radius 6. What is the area of the sector? (Use π ≈ 3.14)",["113.04","18.84","37.68","9.42"],1],
-          ["A circle's area is 154 (using π ≈ 22/7). What is its radius?",["11","49","7","14"],2],
-          ["A sector has a central angle of 120° in a circle with radius 3. What is the arc length in terms of π?",["π","4π","3π","2π"],3],
-          ["If the radius of a circle doubles, its area:",["Becomes 2 times as large","Becomes 4 times as large","Becomes 8 times as large","Stays the same"],1]
+          ["A circle has radius 9. What is its circumference in terms of π?",["9π","81π","18π","36π"],2],
+          ["A sector has a central angle of 90° in a circle with radius 8. What is the arc length? (Use π ≈ 3.14)",["25.12","50.24","12.56","6.28"],2],
+          ["A sector has a central angle of 60° in a circle with radius 6. What is the area of the sector? (Use π ≈ 3.14)",["9.42","113.04","18.84","37.68"],2],
+          ["A circle's area is 154 (using π ≈ 22/7). What is its radius?",["7","14","11","49"],0],
+          ["A sector has a central angle of 120° in a circle with radius 3. What is the arc length in terms of π?",["3π","4π","π","2π"],3],
+          ["If the radius of a circle doubles, its area:",["Stays the same","Becomes 2 times as large","Becomes 8 times as large","Becomes 4 times as large"],3]
         ]}
     ]},
     algebra2: { name:"Algebra 2", topics: [
       { t:"Factoring Quadratics & Polynomial Expressions (Kumon I)", o:"Factor quadratic expressions and simplify polynomial expressions, including recognizing patterns like difference of squares.",
         p:[
-          ["Factor: x² + 7x + 12",["(x+3)(x+4)","(x+1)(x+12)","(x+2)(x+6)","(x-3)(x-4)"],0],
-          ["Factor: x² - 9",["(x-9)(x+1)","(x+3)²","(x-3)(x+3)","(x-3)²"],2],
-          ["Factor: x² - 5x + 6",["(x-1)(x-6)","(x-6)(x+1)","(x-2)(x-3)","(x+2)(x+3)"],2],
-          ["Expand: (x+4)²",["x²+16","x²+8x+16","x²+4x+16","x²+8x+8"],1]
+          ["Factor: x² + 7x + 12",["(x-3)(x-4)","(x+1)(x+12)","(x+3)(x+4)","(x+2)(x+6)"],2],
+          ["Factor: x² - 9",["(x-9)(x+1)","(x+3)²","(x-3)²","(x-3)(x+3)"],3],
+          ["Factor: x² - 5x + 6",["(x-6)(x+1)","(x-2)(x-3)","(x+2)(x+3)","(x-1)(x-6)"],1],
+          ["Expand: (x+4)²",["x²+8x+8","x²+16","x²+8x+16","x²+4x+16"],2]
         ],
         a:[
-          ["Factor: x² + 2x - 15",["(x+3)(x-5)","(x+15)(x-1)","(x+5)(x-3)","(x-5)(x+3)"],2],
-          ["Factor completely: 2x² + 8x",["x(2x+8)","2(x²+4x)","2x(x+4)","2x(x+8)"],2],
-          ["Factor: x² - 16",["(x-16)(x+1)","(x-4)(x+4)","(x-4)²","(x-8)(x+2)"],1],
-          ["Factor: x² + 10x + 25",["(x+5)(x-5)","(x+10)(x+15)","(x+5)²","(x+25)"],2],
+          ["Factor: x² + 2x - 15",["(x-5)(x+3)","(x+3)(x-5)","(x+15)(x-1)","(x+5)(x-3)"],3],
+          ["Factor completely: 2x² + 8x",["2x(x+8)","2(x²+4x)","x(2x+8)","2x(x+4)"],3],
+          ["Factor: x² - 16",["(x-4)(x+4)","(x-16)(x+1)","(x-4)²","(x-8)(x+2)"],0],
+          ["Factor: x² + 10x + 25",["(x+5)(x-5)","(x+25)","(x+5)²","(x+10)(x+15)"],2],
           ["Factor completely: 3x² - 12",["(3x-12)(x+1)","3x(x-4)","3(x-2)(x+2)","3(x-4)(x+4)"],2],
-          ["Factor: x² - x - 6",["(x+6)(x-1)","(x-3)(x+2)","(x-6)(x+1)","(x+3)(x-2)"],1]
+          ["Factor: x² - x - 6",["(x+6)(x-1)","(x-3)(x+2)","(x+3)(x-2)","(x-6)(x+1)"],1]
         ]},
       { t:"Solving Quadratic Equations (Kumon I)", o:"Solve quadratic equations by factoring, using the quadratic formula, and analyzing the discriminant.",
         p:[
-          ["Solve by factoring: x² - 5x + 6 = 0",["x = -2 or x = -3","x = 2 or x = 3","x = 1 or x = 6","x = 5 or x = 6"],1],
-          ["Solve: x² - 9 = 0",["x = -3 only","x = 9 or x = -9","x = 3 or x = -3","x = 3 only"],2],
-          ["Using the quadratic formula x = (-b ± √(b²-4ac)) / 2a, what is the discriminant b²-4ac for x² + 4x + 4 = 0?",["0","8","16","-16"],0],
-          ["A discriminant of 0 means the quadratic equation has:",["Exactly one real solution (a repeated root)","Infinite solutions","No real solutions","Two real solutions"],0]
+          ["Solve by factoring: x² - 5x + 6 = 0",["x = 1 or x = 6","x = 2 or x = 3","x = -2 or x = -3","x = 5 or x = 6"],1],
+          ["Solve: x² - 9 = 0",["x = 3 or x = -3","x = -3 only","x = 3 only","x = 9 or x = -9"],0],
+          ["Using the quadratic formula x = (-b ± √(b²-4ac)) / 2a, what is the discriminant b²-4ac for x² + 4x + 4 = 0?",["-16","16","8","0"],3],
+          ["A discriminant of 0 means the quadratic equation has:",["Two real solutions","Exactly one real solution (a repeated root)","No real solutions","Infinite solutions"],1]
         ],
         a:[
-          ["Solve by factoring: x² + x - 12 = 0",["x = -3 or x = 4","x = 12 or x = -1","x = 3 or x = -4","x = 4 or x = -3"],2],
-          ["Use the quadratic formula to solve x² - 4x + 3 = 0",["x = 2 or x = 2","x = -1 or x = -3","x = 1 or x = 3","x = 4 or x = 3"],2],
-          ["What is the discriminant of x² + 2x + 5 = 0, and what does it tell you?",["4; there is one real solution","-16; there are no real solutions","-4; there is one real solution","16; there are two real solutions"],1],
-          ["Solve using the quadratic formula: 2x² + 3x - 2 = 0",["x = -0.5 or x = 2","x = 2 or x = -0.5","x = 1 or x = -2","x = 0.5 or x = -2"],3],
-          ["A quadratic equation has a discriminant of 25. How many real solutions does it have?",["No real solutions","Cannot be determined","Two real solutions","One real solution"],2],
-          ["Solve: x² = 49",["x = -7 only","x = 49","x = 7 only","x = 7 or x = -7"],3]
+          ["Solve by factoring: x² + x - 12 = 0",["x = 4 or x = -3","x = 12 or x = -1","x = 3 or x = -4","x = -3 or x = 4"],2],
+          ["Use the quadratic formula to solve x² - 4x + 3 = 0",["x = 2 or x = 2","x = 4 or x = 3","x = 1 or x = 3","x = -1 or x = -3"],2],
+          ["What is the discriminant of x² + 2x + 5 = 0, and what does it tell you?",["-4; there is one real solution","4; there is one real solution","16; there are two real solutions","-16; there are no real solutions"],3],
+          ["Solve using the quadratic formula: 2x² + 3x - 2 = 0",["x = 0.5 or x = -2","x = -0.5 or x = 2","x = 2 or x = -0.5","x = 1 or x = -2"],0],
+          ["A quadratic equation has a discriminant of 25. How many real solutions does it have?",["Two real solutions","Cannot be determined","One real solution","No real solutions"],0],
+          ["Solve: x² = 49",["x = 7 or x = -7","x = 7 only","x = 49","x = -7 only"],0]
         ]},
       { t:"Quadratic Functions & Graphs (Kumon I)", o:"Identify key features of a quadratic function's graph (vertex, axis of symmetry, intercepts) and find intersections with lines.",
         p:[
-          ["For the parabola y = x² - 4x + 3, what are the x-intercepts?",["x = 2 and x = 2","x = 4 and x = 3","x = 1 and x = 3","x = -1 and x = -3"],2],
-          ["For y = (x-2)² + 5, what is the vertex?",["(2, -5)","(2, 5)","(5, 2)","(-2, 5)"],1],
-          ["A parabola y = ax² + bx + c opens downward when:",["a is positive","c is zero","a is negative","b is negative"],2],
-          ["What is the axis of symmetry for y = x² - 6x + 8?",["x = 3","x = -6","x = 6","x = -3"],0]
+          ["For the parabola y = x² - 4x + 3, what are the x-intercepts?",["x = 2 and x = 2","x = -1 and x = -3","x = 1 and x = 3","x = 4 and x = 3"],2],
+          ["For y = (x-2)² + 5, what is the vertex?",["(2, 5)","(-2, 5)","(2, -5)","(5, 2)"],0],
+          ["A parabola y = ax² + bx + c opens downward when:",["c is zero","a is negative","a is positive","b is negative"],1],
+          ["What is the axis of symmetry for y = x² - 6x + 8?",["x = 6","x = -6","x = 3","x = -3"],2]
         ],
         a:[
-          ["Find the x-intercepts (zeros) of y = x² - x - 6.",["x = 3 and x = -2","x = -3 and x = 2","x = 6 and x = -1","x = 1 and x = -6"],0],
-          ["Find the point(s) where y = x² and y = x + 2 intersect.",["(-2,4) and (1,1)","(4,2) and (1,-1)","(2,2) and (-1,-1)","(2,4) and (-1,1)"],3],
-          ["Find the point(s) where y = x² and y = 3x - 2 intersect.",["(1,4) and (2,1)","(1,-1) and (2,-4)","(1,1) and (2,4)","(3,1) and (2,-2)"],2],
-          ["For y = -x² + 4, what is the maximum value of y, and at what x does it occur?",["Maximum of 4 at x = 4","Maximum of 4 at x = 0","Minimum of 4 at x = 0","Maximum of 0 at x = 4"],1],
-          ["How many times does the parabola y = x² + 1 intersect the x-axis?",["Once","Zero times — it never crosses the x-axis","Infinitely many times","Twice"],1],
-          ["For y = 2(x+1)² - 3, what is the vertex, and does the parabola open up or down?",["Vertex (-1, -3), opens up","Vertex (1, -3), opens down","Vertex (-1, 3), opens up","Vertex (-1, -3), opens down"],0]
+          ["Find the x-intercepts (zeros) of y = x² - x - 6.",["x = 6 and x = -1","x = 3 and x = -2","x = -3 and x = 2","x = 1 and x = -6"],1],
+          ["Find the point(s) where y = x² and y = x + 2 intersect.",["(2,4) and (-1,1)","(4,2) and (1,-1)","(2,2) and (-1,-1)","(-2,4) and (1,1)"],0],
+          ["Find the point(s) where y = x² and y = 3x - 2 intersect.",["(1,4) and (2,1)","(3,1) and (2,-2)","(1,1) and (2,4)","(1,-1) and (2,-4)"],2],
+          ["For y = -x² + 4, what is the maximum value of y, and at what x does it occur?",["Minimum of 4 at x = 0","Maximum of 4 at x = 0","Maximum of 0 at x = 4","Maximum of 4 at x = 4"],1],
+          ["How many times does the parabola y = x² + 1 intersect the x-axis?",["Once","Twice","Infinitely many times","Zero times — it never crosses the x-axis"],3],
+          ["For y = 2(x+1)² - 3, what is the vertex, and does the parabola open up or down?",["Vertex (-1, 3), opens up","Vertex (-1, -3), opens down","Vertex (1, -3), opens down","Vertex (-1, -3), opens up"],3]
         ]},
       { t:"Exponent Rules & Polynomial Operations (Kumon J)", o:"Apply exponent rules (product, power, and quotient of powers) and multiply/divide monomials and polynomials.",
         p:[
-          ["Simplify: a³ × a⁴",["a¹","2a⁷","a¹²","a⁷"],3],
-          ["Simplify: (a³)⁴",["a¹²","a⁷","4a³","a¹"],0],
-          ["Simplify: a⁷ ÷ a⁵",["a⁵/⁷","a²","a³⁵","a¹²"],1],
-          ["Simplify: 3a²b³ × 5a³b²",["15a⁵b⁵","15a⁵b⁶","15a⁶b⁶","8a⁵b⁵"],0]
+          ["Simplify: a³ × a⁴",["a⁷","a¹","a¹²","2a⁷"],0],
+          ["Simplify: (a³)⁴",["a⁷","a¹²","a¹","4a³"],1],
+          ["Simplify: a⁷ ÷ a⁵",["a¹²","a⁵/⁷","a³⁵","a²"],3],
+          ["Simplify: 3a²b³ × 5a³b²",["15a⁶b⁶","8a⁵b⁵","15a⁵b⁵","15a⁵b⁶"],2]
         ],
         a:[
-          ["Simplify: (-2a²bc³)³",["8a⁶b³c⁹","-6a⁶b³c⁹","-8a⁶b³c⁹","-8a⁵b³c⁶"],2],
-          ["Simplify: (a⁴)³ ÷ (a³)⁴",["a⁰, which is undefined","a","a²⁴","1"],3],
+          ["Simplify: (-2a²bc³)³",["-8a⁶b³c⁹","8a⁶b³c⁹","-6a⁶b³c⁹","-8a⁵b³c⁶"],0],
+          ["Simplify: (a⁴)³ ÷ (a³)⁴",["1","a","a⁰, which is undefined","a²⁴"],0],
           ["Simplify: 4a³b ÷ 3ab²",["(4/3)a²b","4a²/(3b)","4a³b/3","12a²/b"],1],
-          ["Expand: 3xy(2yz + 4xz)",["6x²y²z","6xy²z + 4xz","3xy·2yz + 4xz","6xy²z + 12x²yz"],3],
-          ["Expand: -2abc(ab + bc + ca)",["2a²b²c + 2ab²c² + 2a²bc²","-2abc + ab + bc + ca","-2a²b²c - 2ab²c² - 2a²bc²","-2a²b²c² × 3"],2],
-          ["Simplify: (2/3)a⁴b⁴ × (-3a²b) ÷ (1/4)a⁵b⁷",["-6a/b²","8a/b²","-8a/b²","-8ab⁻⁹"],2]
+          ["Expand: 3xy(2yz + 4xz)",["6xy²z + 12x²yz","6xy²z + 4xz","6x²y²z","3xy·2yz + 4xz"],0],
+          ["Expand: -2abc(ab + bc + ca)",["-2a²b²c - 2ab²c² - 2a²bc²","-2a²b²c² × 3","2a²b²c + 2ab²c² + 2a²bc²","-2abc + ab + bc + ca"],0],
+          ["Simplify: (2/3)a⁴b⁴ × (-3a²b) ÷ (1/4)a⁵b⁷",["8a/b²","-6a/b²","-8a/b²","-8ab⁻⁹"],2]
         ]}
     ]},
     amc8: { name:"AMC 8 Prep", topics: [
       { t:"Day 1: Warm-Up — Arithmetic & Logic", o:"AMC 8-style problems (5 answer choices, like the real exam) covering order of operations, fractions, and basic reasoning.",
         p:[
-          ["What is 3 + 3 × 3 − 3 ÷ 3?",["10","9","27","11","15"],3],
-          ["A pizza is cut into 8 equal slices. Ravi eats 3 slices and gives 2 slices to his sister. What fraction of the pizza is left?",["1/8","5/8","3/8","1/4","1/2"],2],
-          ["The sum of two numbers is 24 and their difference is 6. What is the larger number?",["18","9","12","21","15"],4],
-          ["How many positive integers less than 20 are multiples of 3?",["4","6","5","8","7"],1],
-          ["If today is Wednesday, what day of the week will it be 100 days from now?",["Wednesday","Friday","Thursday","Monday","Tuesday"],1]
+          ["What is 3 + 3 × 3 − 3 ÷ 3?",["15","11","9","10","27"],1],
+          ["A pizza is cut into 8 equal slices. Ravi eats 3 slices and gives 2 slices to his sister. What fraction of the pizza is left?",["1/8","5/8","1/4","1/2","3/8"],4],
+          ["The sum of two numbers is 24 and their difference is 6. What is the larger number?",["15","21","18","9","12"],0],
+          ["How many positive integers less than 20 are multiples of 3?",["4","8","6","7","5"],2],
+          ["If today is Wednesday, what day of the week will it be 100 days from now?",["Thursday","Friday","Wednesday","Monday","Tuesday"],1]
         ],
         a:[
-          ["What is 3 + 3 × 3 − 3 ÷ 3?",["27","9","11","15","10"],2],
-          ["A pizza is cut into 8 equal slices. Ravi eats 3 slices and gives 2 slices to his sister. What fraction of the pizza is left?",["3/8","1/4","5/8","1/8","1/2"],0],
-          ["The sum of two numbers is 24 and their difference is 6. What is the larger number?",["9","15","18","12","21"],1],
-          ["How many positive integers less than 20 are multiples of 3?",["5","8","4","6","7"],3],
-          ["If today is Wednesday, what day of the week will it be 100 days from now?",["Monday","Friday","Thursday","Tuesday","Wednesday"],1]
+          ["What is 3 + 3 × 3 − 3 ÷ 3?",["27","11","15","9","10"],1],
+          ["A pizza is cut into 8 equal slices. Ravi eats 3 slices and gives 2 slices to his sister. What fraction of the pizza is left?",["5/8","1/8","1/4","3/8","1/2"],3],
+          ["The sum of two numbers is 24 and their difference is 6. What is the larger number?",["12","15","18","9","21"],1],
+          ["How many positive integers less than 20 are multiples of 3?",["5","6","7","4","8"],1],
+          ["If today is Wednesday, what day of the week will it be 100 days from now?",["Thursday","Monday","Tuesday","Wednesday","Friday"],4]
         ]},
       { t:"Day 2: Ratios, Proportions & Percents", o:"AMC 8-style problems on ratios, scaling, and percent changes.",
         p:[
-          ["A recipe uses flour and sugar in a ratio of 5:2. If a baker uses 15 cups of flour, how many cups of sugar does she need?",["4","7","5","6","8"],3],
-          ["A shirt originally costs $40. It is discounted by 25%, and then the sale price is discounted by another 10%. What is the final price?",["$24","$27","$26","$25","$30"],1],
-          ["In a class of 30 students, 40% are boys. How many girls are in the class?",["15","20","16","12","18"],4],
-          ["If 3 pencils cost the same as 2 erasers, and 1 eraser costs 90 cents, how much does 1 pencil cost?",["$0.60","$0.75","$0.45","$0.90","$0.30"],0],
-          ["A map has a scale of 1 inch : 25 miles. If two cities are 4.4 inches apart on the map, how far apart are they in reality?",["110 miles","90 miles","125 miles","100 miles","120 miles"],0]
+          ["A recipe uses flour and sugar in a ratio of 5:2. If a baker uses 15 cups of flour, how many cups of sugar does she need?",["7","8","5","4","6"],4],
+          ["A shirt originally costs $40. It is discounted by 25%, and then the sale price is discounted by another 10%. What is the final price?",["$27","$24","$30","$26","$25"],0],
+          ["In a class of 30 students, 40% are boys. How many girls are in the class?",["18","16","20","12","15"],0],
+          ["If 3 pencils cost the same as 2 erasers, and 1 eraser costs 90 cents, how much does 1 pencil cost?",["$0.45","$0.90","$0.60","$0.75","$0.30"],2],
+          ["A map has a scale of 1 inch : 25 miles. If two cities are 4.4 inches apart on the map, how far apart are they in reality?",["90 miles","100 miles","120 miles","125 miles","110 miles"],4]
         ],
         a:[
-          ["A recipe uses flour and sugar in a ratio of 5:2. If a baker uses 15 cups of flour, how many cups of sugar does she need?",["6","7","4","5","8"],0],
-          ["A shirt originally costs $40. It is discounted by 25%, and then the sale price is discounted by another 10%. What is the final price?",["$25","$24","$26","$27","$30"],3],
-          ["In a class of 30 students, 40% are boys. How many girls are in the class?",["12","15","18","16","20"],2],
-          ["If 3 pencils cost the same as 2 erasers, and 1 eraser costs 90 cents, how much does 1 pencil cost?",["$0.30","$0.90","$0.45","$0.75","$0.60"],4],
-          ["A map has a scale of 1 inch : 25 miles. If two cities are 4.4 inches apart on the map, how far apart are they in reality?",["110 miles","120 miles","125 miles","100 miles","90 miles"],0]
+          ["A recipe uses flour and sugar in a ratio of 5:2. If a baker uses 15 cups of flour, how many cups of sugar does she need?",["5","7","8","4","6"],4],
+          ["A shirt originally costs $40. It is discounted by 25%, and then the sale price is discounted by another 10%. What is the final price?",["$24","$26","$27","$30","$25"],2],
+          ["In a class of 30 students, 40% are boys. How many girls are in the class?",["20","16","12","18","15"],3],
+          ["If 3 pencils cost the same as 2 erasers, and 1 eraser costs 90 cents, how much does 1 pencil cost?",["$0.75","$0.60","$0.90","$0.30","$0.45"],1],
+          ["A map has a scale of 1 inch : 25 miles. If two cities are 4.4 inches apart on the map, how far apart are they in reality?",["100 miles","90 miles","120 miles","110 miles","125 miles"],3]
         ]},
       { t:"Day 3: Number Theory — Factors, Primes, GCF & LCM", o:"AMC 8-style problems on divisibility, prime numbers, and greatest common factor / least common multiple.",
         p:[
-          ["What is the greatest common factor (GCF) of 36 and 48?",["16","6","8","12","24"],3],
-          ["What is the least common multiple (LCM) of 6 and 8?",["48","24","12","32","16"],1],
-          ["How many positive divisors does 60 have?",["8","12","15","10","9"],1],
-          ["What is the smallest prime number greater than 50?",["53","57","51","52","55"],0],
-          ["What is the remainder when 2024 is divided by 9?",["6","4","7","2","8"],4]
+          ["What is the greatest common factor (GCF) of 36 and 48?",["12","16","24","6","8"],0],
+          ["What is the least common multiple (LCM) of 6 and 8?",["12","16","48","24","32"],3],
+          ["How many positive divisors does 60 have?",["10","12","9","8","15"],1],
+          ["What is the smallest prime number greater than 50?",["53","52","57","51","55"],0],
+          ["What is the remainder when 2024 is divided by 9?",["7","8","4","2","6"],1]
         ],
         a:[
-          ["What is the greatest common factor (GCF) of 36 and 48?",["24","12","6","8","16"],1],
-          ["What is the least common multiple (LCM) of 6 and 8?",["16","32","12","48","24"],4],
-          ["How many positive divisors does 60 have?",["12","9","10","8","15"],0],
+          ["What is the greatest common factor (GCF) of 36 and 48?",["12","16","8","6","24"],0],
+          ["What is the least common multiple (LCM) of 6 and 8?",["16","24","48","32","12"],1],
+          ["How many positive divisors does 60 have?",["8","10","12","15","9"],2],
           ["What is the smallest prime number greater than 50?",["51","52","53","57","55"],2],
-          ["What is the remainder when 2024 is divided by 9?",["4","6","2","8","7"],3]
+          ["What is the remainder when 2024 is divided by 9?",["4","7","2","8","6"],3]
         ]},
       { t:"Day 4: Geometry — Perimeter, Area & Angles", o:"AMC 8-style geometry problems solvable without a diagram: rectangles, squares, triangles, and circles.",
         p:[
-          ["A rectangle has length 12 and width 5. What is its perimeter?",["68","60","17","34","85"],3],
-          ["A square has area 81. What is its perimeter?",["27","18","81","32","36"],4],
-          ["Two angles are supplementary. One angle is three times the other. What is the measure of the smaller angle?",["45°","40°","60°","30°","36°"],0],
+          ["A rectangle has length 12 and width 5. What is its perimeter?",["17","60","34","85","68"],2],
+          ["A square has area 81. What is its perimeter?",["32","18","27","81","36"],4],
+          ["Two angles are supplementary. One angle is three times the other. What is the measure of the smaller angle?",["45°","40°","30°","36°","60°"],0],
           ["A triangle has angles in the ratio 2:3:4. What is the measure of the largest angle?",["80°","90°","100°","60°","70°"],0],
-          ["A circle has a circumference of 31.4 cm. Using π ≈ 3.14, what is its radius?",["10 cm","5 cm","6 cm","4 cm","3 cm"],1]
+          ["A circle has a circumference of 31.4 cm. Using π ≈ 3.14, what is its radius?",["3 cm","4 cm","5 cm","6 cm","10 cm"],2]
         ],
         a:[
-          ["A rectangle has length 12 and width 5. What is its perimeter?",["34","17","60","85","68"],0],
-          ["A square has area 81. What is its perimeter?",["18","27","32","81","36"],4],
-          ["Two angles are supplementary. One angle is three times the other. What is the measure of the smaller angle?",["45°","36°","30°","40°","60°"],0],
-          ["A triangle has angles in the ratio 2:3:4. What is the measure of the largest angle?",["60°","100°","90°","70°","80°"],4],
-          ["A circle has a circumference of 31.4 cm. Using π ≈ 3.14, what is its radius?",["5 cm","6 cm","4 cm","3 cm","10 cm"],0]
+          ["A rectangle has length 12 and width 5. What is its perimeter?",["17","68","60","85","34"],4],
+          ["A square has area 81. What is its perimeter?",["81","27","18","36","32"],3],
+          ["Two angles are supplementary. One angle is three times the other. What is the measure of the smaller angle?",["36°","45°","30°","60°","40°"],1],
+          ["A triangle has angles in the ratio 2:3:4. What is the measure of the largest angle?",["60°","90°","70°","100°","80°"],4],
+          ["A circle has a circumference of 31.4 cm. Using π ≈ 3.14, what is its radius?",["6 cm","4 cm","5 cm","10 cm","3 cm"],2]
         ]},
       { t:"Day 5: Counting & Combinatorics", o:"AMC 8-style counting problems: arrangements, combinations, and lattice paths.",
         p:[
-          ["How many ways can 4 students be arranged in a row for a photo?",["4","24","12","16","8"],1],
-          ["A pizza shop offers 3 types of crust and 4 types of toppings. If a customer chooses exactly one crust and one topping, how many different pizzas are possible?",["12","10","14","7","24"],0],
-          ["How many ways can you choose 2 books from a shelf of 5 different books?",["10","20","25","5","15"],0],
-          ["How many 2-digit positive integers have both digits odd?",["16","45","10","25","20"],3],
-          ["A path from point A to point B requires moving 3 steps right and 2 steps up, in some order. How many distinct paths are there?",["12","5","6","10","8"],3]
+          ["How many ways can 4 students be arranged in a row for a photo?",["4","8","16","24","12"],3],
+          ["A pizza shop offers 3 types of crust and 4 types of toppings. If a customer chooses exactly one crust and one topping, how many different pizzas are possible?",["10","12","24","7","14"],1],
+          ["How many ways can you choose 2 books from a shelf of 5 different books?",["25","20","5","10","15"],3],
+          ["How many 2-digit positive integers have both digits odd?",["16","10","20","45","25"],4],
+          ["A path from point A to point B requires moving 3 steps right and 2 steps up, in some order. How many distinct paths are there?",["10","5","6","8","12"],0]
         ],
         a:[
-          ["How many ways can 4 students be arranged in a row for a photo?",["8","16","12","24","4"],3],
-          ["A pizza shop offers 3 types of crust and 4 types of toppings. If a customer chooses exactly one crust and one topping, how many different pizzas are possible?",["12","7","10","24","14"],0],
-          ["How many ways can you choose 2 books from a shelf of 5 different books?",["20","15","25","10","5"],3],
-          ["How many 2-digit positive integers have both digits odd?",["45","20","10","16","25"],4],
-          ["A path from point A to point B requires moving 3 steps right and 2 steps up, in some order. How many distinct paths are there?",["10","12","6","8","5"],0]
+          ["How many ways can 4 students be arranged in a row for a photo?",["24","12","8","16","4"],0],
+          ["A pizza shop offers 3 types of crust and 4 types of toppings. If a customer chooses exactly one crust and one topping, how many different pizzas are possible?",["12","7","14","10","24"],0],
+          ["How many ways can you choose 2 books from a shelf of 5 different books?",["15","5","10","20","25"],2],
+          ["How many 2-digit positive integers have both digits odd?",["10","20","16","25","45"],3],
+          ["A path from point A to point B requires moving 3 steps right and 2 steps up, in some order. How many distinct paths are there?",["5","10","6","8","12"],1]
         ]},
       { t:"Day 6: Probability", o:"AMC 8-style probability problems with dice, coins, and marbles.",
         p:[
-          ["A fair six-sided die is rolled once. What is the probability that the result is a prime number?",["5/6","2/3","1/6","1/3","1/2"],4],
-          ["A bag contains 4 red marbles and 6 blue marbles. If one marble is drawn at random, what is the probability it is red?",["1/2","3/5","2/5","1/4","4/5"],2],
-          ["Two coins are flipped. What is the probability that both land on heads?",["1/8","1/4","1/2","1","3/4"],1],
-          ["A spinner is divided into 5 equal sections numbered 1 through 5. What is the probability of spinning an even number?",["3/5","1/5","2/5","4/5","1/2"],2],
-          ["A jar has 3 green, 5 yellow, and 2 purple candies. If one candy is picked at random, what is the probability it is NOT yellow?",["3/5","7/10","3/10","1/5","1/2"],4]
+          ["A fair six-sided die is rolled once. What is the probability that the result is a prime number?",["2/3","1/3","1/2","5/6","1/6"],2],
+          ["A bag contains 4 red marbles and 6 blue marbles. If one marble is drawn at random, what is the probability it is red?",["1/2","2/5","4/5","1/4","3/5"],1],
+          ["Two coins are flipped. What is the probability that both land on heads?",["1/4","3/4","1/8","1","1/2"],0],
+          ["A spinner is divided into 5 equal sections numbered 1 through 5. What is the probability of spinning an even number?",["1/2","1/5","4/5","3/5","2/5"],4],
+          ["A jar has 3 green, 5 yellow, and 2 purple candies. If one candy is picked at random, what is the probability it is NOT yellow?",["3/10","7/10","1/5","3/5","1/2"],4]
         ],
         a:[
-          ["A fair six-sided die is rolled once. What is the probability that the result is a prime number?",["5/6","1/2","1/6","1/3","2/3"],1],
-          ["A bag contains 4 red marbles and 6 blue marbles. If one marble is drawn at random, what is the probability it is red?",["1/2","3/5","4/5","1/4","2/5"],4],
-          ["Two coins are flipped. What is the probability that both land on heads?",["1/8","1","1/4","3/4","1/2"],2],
-          ["A spinner is divided into 5 equal sections numbered 1 through 5. What is the probability of spinning an even number?",["4/5","3/5","2/5","1/2","1/5"],2],
-          ["A jar has 3 green, 5 yellow, and 2 purple candies. If one candy is picked at random, what is the probability it is NOT yellow?",["1/2","1/5","3/10","7/10","3/5"],0]
+          ["A fair six-sided die is rolled once. What is the probability that the result is a prime number?",["1/6","5/6","1/3","1/2","2/3"],3],
+          ["A bag contains 4 red marbles and 6 blue marbles. If one marble is drawn at random, what is the probability it is red?",["3/5","4/5","1/2","2/5","1/4"],3],
+          ["Two coins are flipped. What is the probability that both land on heads?",["1/2","1/4","1/8","3/4","1"],1],
+          ["A spinner is divided into 5 equal sections numbered 1 through 5. What is the probability of spinning an even number?",["1/5","2/5","3/5","1/2","4/5"],1],
+          ["A jar has 3 green, 5 yellow, and 2 purple candies. If one candy is picked at random, what is the probability it is NOT yellow?",["3/10","3/5","1/5","1/2","7/10"],3]
         ]},
       { t:"Day 7: Algebra — Equations & Patterns", o:"AMC 8-style algebra problems: solving equations, sequences, and consecutive integers.",
         p:[
-          ["Solve for x: 3x + 7 = 25.",["7","6","4","5","8"],1],
-          ["What is the next number in the pattern: 2, 6, 18, 54, ...?",["216","162","108","120","150"],1],
-          ["If 5 apples cost the same as 3 oranges, and an orange costs $0.60, how much does one apple cost?",["$0.30","$0.50","$0.36","$0.45","$0.40"],2],
-          ["The sum of three consecutive integers is 72. What is the largest of the three integers?",["23","25","27","26","24"],1],
-          ["If x² = 49 and x is negative, what is x + 10?",["-17","3","7","17","-3"],1]
+          ["Solve for x: 3x + 7 = 25.",["4","5","7","8","6"],4],
+          ["What is the next number in the pattern: 2, 6, 18, 54, ...?",["150","120","108","216","162"],4],
+          ["If 5 apples cost the same as 3 oranges, and an orange costs $0.60, how much does one apple cost?",["$0.50","$0.45","$0.36","$0.30","$0.40"],2],
+          ["The sum of three consecutive integers is 72. What is the largest of the three integers?",["23","26","25","24","27"],2],
+          ["If x² = 49 and x is negative, what is x + 10?",["-3","3","-17","7","17"],1]
         ],
         a:[
-          ["Solve for x: 3x + 7 = 25.",["7","5","6","4","8"],2],
-          ["What is the next number in the pattern: 2, 6, 18, 54, ...?",["120","108","216","162","150"],3],
-          ["If 5 apples cost the same as 3 oranges, and an orange costs $0.60, how much does one apple cost?",["$0.30","$0.36","$0.45","$0.40","$0.50"],1],
-          ["The sum of three consecutive integers is 72. What is the largest of the three integers?",["25","26","23","24","27"],0],
-          ["If x² = 49 and x is negative, what is x + 10?",["3","-3","-17","17","7"],0]
+          ["Solve for x: 3x + 7 = 25.",["6","8","4","5","7"],0],
+          ["What is the next number in the pattern: 2, 6, 18, 54, ...?",["108","216","120","162","150"],3],
+          ["If 5 apples cost the same as 3 oranges, and an orange costs $0.60, how much does one apple cost?",["$0.50","$0.45","$0.40","$0.30","$0.36"],4],
+          ["The sum of three consecutive integers is 72. What is the largest of the three integers?",["26","25","27","24","23"],1],
+          ["If x² = 49 and x is negative, what is x + 10?",["-17","-3","17","7","3"],4]
         ]},
       { t:"Day 8: Mixed Review — Medium", o:"AMC 8-style mixed problems: units digits, cost problems, set overlap, and word problems.",
         p:[
-          ["What is the units digit of 7²³?",["3","0","7","1","9"],0],
-          ["A store sells notebooks at 3 for $5. How much would 12 notebooks cost?",["$15","$18","$22","$25","$20"],4],
-          ["In a group of 25 students, everyone plays soccer or basketball (or both). If 15 play soccer and 18 play basketball, how many play both?",["6","8","7","5","10"],1],
-          ["What is the sum of the first 10 positive even integers?",["100","90","110","120","210"],2],
-          ["A rectangular garden is twice as long as it is wide. If its area is 200 square feet, what is its width?",["20 ft","10 ft","12 ft","8 ft","5 ft"],1]
+          ["What is the units digit of 7²³?",["1","0","7","3","9"],3],
+          ["A store sells notebooks at 3 for $5. How much would 12 notebooks cost?",["$25","$15","$20","$22","$18"],2],
+          ["In a group of 25 students, everyone plays soccer or basketball (or both). If 15 play soccer and 18 play basketball, how many play both?",["6","10","7","5","8"],4],
+          ["What is the sum of the first 10 positive even integers?",["100","90","210","110","120"],3],
+          ["A rectangular garden is twice as long as it is wide. If its area is 200 square feet, what is its width?",["5 ft","12 ft","8 ft","20 ft","10 ft"],4]
         ],
         a:[
-          ["What is the units digit of 7²³?",["1","7","9","0","3"],4],
-          ["A store sells notebooks at 3 for $5. How much would 12 notebooks cost?",["$25","$15","$18","$20","$22"],3],
-          ["In a group of 25 students, everyone plays soccer or basketball (or both). If 15 play soccer and 18 play basketball, how many play both?",["6","8","5","7","10"],1],
-          ["What is the sum of the first 10 positive even integers?",["210","100","90","110","120"],3],
-          ["A rectangular garden is twice as long as it is wide. If its area is 200 square feet, what is its width?",["10 ft","12 ft","20 ft","5 ft","8 ft"],0]
+          ["What is the units digit of 7²³?",["7","0","9","1","3"],4],
+          ["A store sells notebooks at 3 for $5. How much would 12 notebooks cost?",["$25","$20","$22","$18","$15"],1],
+          ["In a group of 25 students, everyone plays soccer or basketball (or both). If 15 play soccer and 18 play basketball, how many play both?",["6","5","7","8","10"],3],
+          ["What is the sum of the first 10 positive even integers?",["120","210","90","100","110"],4],
+          ["A rectangular garden is twice as long as it is wide. If its area is 200 square feet, what is its width?",["10 ft","20 ft","8 ft","12 ft","5 ft"],0]
         ]},
       { t:"Day 9: Number Theory — Medium", o:"AMC 8-style problems on modular remainders, divisibility, and minimizing sums of factors.",
         p:[
-          ["What is the remainder when 7¹⁰⁰ is divided by 5?",["3","2","1","0","4"],2],
-          ["How many positive integers between 1 and 100 (inclusive) are divisible by both 4 and 6?",["9","7","6","8","12"],3],
-          ["A number leaves a remainder of 3 when divided by 7. What remainder does 3 times that number leave when divided by 7?",["4","3","1","6","2"],4],
-          ["What is the sum of the digits of the smallest 4-digit multiple of 9?",["8","6","18","9","12"],3],
-          ["If a and b are positive integers with a × b = 36 and a + b is as small as possible, what is a + b?",["13","15","10","12","20"],3]
+          ["What is the remainder when 7¹⁰⁰ is divided by 5?",["4","3","2","0","1"],4],
+          ["How many positive integers between 1 and 100 (inclusive) are divisible by both 4 and 6?",["6","8","12","9","7"],1],
+          ["A number leaves a remainder of 3 when divided by 7. What remainder does 3 times that number leave when divided by 7?",["4","1","2","6","3"],2],
+          ["What is the sum of the digits of the smallest 4-digit multiple of 9?",["9","8","6","18","12"],0],
+          ["If a and b are positive integers with a × b = 36 and a + b is as small as possible, what is a + b?",["15","10","12","20","13"],2]
         ],
         a:[
-          ["What is the remainder when 7¹⁰⁰ is divided by 5?",["1","4","3","0","2"],0],
-          ["How many positive integers between 1 and 100 (inclusive) are divisible by both 4 and 6?",["12","9","6","7","8"],4],
-          ["A number leaves a remainder of 3 when divided by 7. What remainder does 3 times that number leave when divided by 7?",["2","6","1","3","4"],0],
-          ["What is the sum of the digits of the smallest 4-digit multiple of 9?",["12","18","8","9","6"],3],
-          ["If a and b are positive integers with a × b = 36 and a + b is as small as possible, what is a + b?",["15","10","12","13","20"],2]
+          ["What is the remainder when 7¹⁰⁰ is divided by 5?",["1","4","2","0","3"],0],
+          ["How many positive integers between 1 and 100 (inclusive) are divisible by both 4 and 6?",["8","12","6","7","9"],0],
+          ["A number leaves a remainder of 3 when divided by 7. What remainder does 3 times that number leave when divided by 7?",["2","1","3","4","6"],0],
+          ["What is the sum of the digits of the smallest 4-digit multiple of 9?",["18","6","12","9","8"],3],
+          ["If a and b are positive integers with a × b = 36 and a + b is as small as possible, what is a + b?",["15","13","20","12","10"],3]
         ]},
       { t:"Day 10: Mixed Review — Challenge", o:"AMC 8-style challenge problems: recursive functions, coin combinations, letter arrangements, and averages.",
         p:[
-          ["A function f satisfies f(x) = 2f(x-1) − 3 for all integers x, and f(0) = 5. What is f(3)?",["21","23","15","17","19"],4],
-          ["How many ways can you make change for a 50-cent coin using only dimes and nickels?",["5","11","6","7","4"],2],
-          ["In how many ways can the letters of the word “BOOK” be arranged?",["24","12","6","48","4"],1],
-          ["The average of 5 numbers is 20. If one number is removed, the average of the remaining 4 numbers is 18. What was the removed number?",["26","22","32","24","28"],4],
-          ["A cube has volume 125. If each side length is increased by 2, what is the new volume?",["300","343","243","350","216"],1]
+          ["A function f satisfies f(x) = 2f(x-1) − 3 for all integers x, and f(0) = 5. What is f(3)?",["17","15","23","19","21"],3],
+          ["How many ways can you make change for a 50-cent coin using only dimes and nickels?",["5","4","11","6","7"],3],
+          ["In how many ways can the letters of the word “BOOK” be arranged?",["48","12","6","24","4"],1],
+          ["The average of 5 numbers is 20. If one number is removed, the average of the remaining 4 numbers is 18. What was the removed number?",["22","26","32","28","24"],3],
+          ["A cube has volume 125. If each side length is increased by 2, what is the new volume?",["350","243","216","343","300"],3]
         ],
         a:[
-          ["A function f satisfies f(x) = 2f(x-1) − 3 for all integers x, and f(0) = 5. What is f(3)?",["19","17","15","23","21"],0],
-          ["How many ways can you make change for a 50-cent coin using only dimes and nickels?",["5","6","4","7","11"],1],
-          ["In how many ways can the letters of the word “BOOK” be arranged?",["48","12","4","6","24"],1],
-          ["The average of 5 numbers is 20. If one number is removed, the average of the remaining 4 numbers is 18. What was the removed number?",["22","28","32","24","26"],1],
-          ["A cube has volume 125. If each side length is increased by 2, what is the new volume?",["343","300","216","350","243"],0]
+          ["A function f satisfies f(x) = 2f(x-1) − 3 for all integers x, and f(0) = 5. What is f(3)?",["17","15","23","19","21"],3],
+          ["How many ways can you make change for a 50-cent coin using only dimes and nickels?",["5","7","6","11","4"],2],
+          ["In how many ways can the letters of the word “BOOK” be arranged?",["6","4","48","24","12"],4],
+          ["The average of 5 numbers is 20. If one number is removed, the average of the remaining 4 numbers is 18. What was the removed number?",["28","32","24","26","22"],0],
+          ["A cube has volume 125. If each side length is increased by 2, what is the new volume?",["243","300","343","216","350"],2]
         ]}
     ]}
   }}
