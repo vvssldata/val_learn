@@ -67,6 +67,38 @@ Verified end-to-end with a labeled test POST (3 rows marked `TEST` /
 "safe to delete this row" were left in the sheet during verification —
 delete them next time you're in there).
 
+This file is stale as of 2026-10-11 — a lot has been added since
+(SAT vocabulary batches, AMC 8 Prep, activity logging with intensity,
+auto-save on every attempt, a passcode gate, and Tasks/Calendar
+widgets on the home page — see below). Check the actual CURRICULUM in
+`index.html` rather than trusting the topic counts above.
+
+## Features added after this file was last fully updated
+
+**Log Activity + intensity + auto-save-everything**: same feature set
+as victoria_learn (see its `PROJECT_NOTES.md` for details) — logging
+non-curriculum time (including a new "Chinese" subject), an intensity
+multiplier (100% down to 10%) computing effective time, and every
+practice/assessment auto-saving to the sheet instead of requiring a
+manual button press.
+
+**Passcode gate** (added 2026-10-11): a client-side lock screen
+(passcode `7777`) blocks the app until unlocked; unlock persists
+per-device via localStorage. Also added `robots.txt` + a `noindex`
+meta tag. Deterrent only, not real security — the code is plain
+client-side JS.
+
+**Home page: Tasks + Calendar widgets** (added 2026-10-11): the home
+screen now shows two widgets above the subject cards (subject cards
+are still there, navigation unchanged):
+- **Tasks** — a parent-typed to-do list (add/check off/delete),
+  stored locally alongside progress (new `tasks` array in the same
+  localStorage blob). Not synced to the Google Sheet.
+- **Calendar** — a month view tinting days with any activity, built
+  from `progressData` attempt timestamps plus a new `activityLog`
+  array that records each "Log Activity" save locally (that feature
+  previously only posted to the Sheet, with no local trace).
+
 ## Commit history
 
 - Initial commit: full 20-topic site (retargeted from victoria_learn)
