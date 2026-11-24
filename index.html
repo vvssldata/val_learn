@@ -1301,7 +1301,7 @@ function startQuiz(subj,area,idx,mode,opts){
       const m = ((prog.missed||{})[mode]||[]).filter(function(i){ return i < all.length; });
       if(m.length){ idxMap = m; subset = true; }
     }
-    q = { src:mode, layout:opts.layout||"step", subset:subset, idxMap:idxMap, answers:new Array(idxMap.length).fill(null), qi:0, elapsed:0 };
+    q = { src:mode, layout:opts.layout||"page", subset:subset, idxMap:idxMap, answers:new Array(idxMap.length).fill(null), qi:0, elapsed:0 };
   }
   q.mode = q.subset ? "practice" : q.src;
   q.questions = q.idxMap.map(function(i){ return bank(q.src)[i]; });
@@ -1647,8 +1647,8 @@ function topicPanelHtml(subj,area,idx){
         + '<button class="btn btn-sm btn-primary" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="'+m+'" data-missed="1" data-layout="page">Retry only these '+ms.length+'</button></div>';
     });
     body += '<div class="mode-grid">'
-      + '<div class="mode-card"><h3>Practice</h3><p>Untimed, retry anytime. Answers revealed right away.</p><button class="btn" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="practice">Start Practice ('+topic.p.length+' Qs)</button> <button class="btn btn-sm btn-ghost" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="practice" data-layout="page">All on one page</button></div>'
-      + '<div class="mode-card"><h3>Assessment</h3><p>Score '+Math.round(PASS_PCT*100)+'%+ to master this topic and unlock the next.</p><button class="btn btn-primary" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="assessment">Start Assessment ('+topic.a.length+' Qs)</button> <button class="btn btn-sm btn-ghost" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="assessment" data-layout="page">All on one page</button></div>'
+      + '<div class="mode-card"><h3>Practice</h3><p>Untimed, retry anytime. Every question on one page; check your answers at the end.</p><button class="btn" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="practice">Start Practice ('+topic.p.length+' Qs)</button> <button class="btn btn-sm btn-ghost" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="practice" data-layout="step">One question at a time</button></div>'
+      + '<div class="mode-card"><h3>Assessment</h3><p>Score '+Math.round(PASS_PCT*100)+'%+ to master this topic and unlock the next.</p><button class="btn btn-primary" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="assessment">Start Assessment ('+topic.a.length+' Qs)</button> <button class="btn btn-sm btn-ghost" data-act="start-quiz" data-subj="'+subj+'" data-area="'+area+'" data-idx="'+idx+'" data-mode="assessment" data-layout="step">One question at a time</button></div>'
       + '</div>';
     if(prog.bestPct) body += '<p class="pill '+(prog.status==="mastered"?"pill-good":"pill-muted")+'">Best assessment score: '+fmtPct(prog.bestPct)+(prog.status==="mastered"?" — Mastered":"")+'</p>';
     if(prog.attempts && prog.attempts.length){
